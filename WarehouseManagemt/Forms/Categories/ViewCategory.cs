@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WarehouseManagemt.Forms.Categories
+namespace WarehouseManagent.Forms.Categories
 {
     public partial class ViewCategoryForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace WarehouseManagemt
+﻿namespace WarehouseManagent
 {
     partial class WarehouseManagement
     {
@@ -67,7 +67,7 @@
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(200, 571);
+            this.menuPanel.Size = new System.Drawing.Size(167, 571);
             this.menuPanel.TabIndex = 0;
             // 
             // categoryMenuPanel
@@ -78,7 +78,7 @@
             this.categoryMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.categoryMenuPanel.Location = new System.Drawing.Point(0, 409);
             this.categoryMenuPanel.Name = "categoryMenuPanel";
-            this.categoryMenuPanel.Size = new System.Drawing.Size(200, 104);
+            this.categoryMenuPanel.Size = new System.Drawing.Size(167, 104);
             this.categoryMenuPanel.TabIndex = 5;
             // 
             // addCategory
@@ -88,12 +88,12 @@
             this.addCategory.FlatAppearance.BorderSize = 0;
             this.addCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addCategory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addCategory.Image = global::WarehouseManagemt.Properties.Resources.category_add;
+            this.addCategory.Image = global::WarehouseManagent.Properties.Resources.category_add;
             this.addCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addCategory.Location = new System.Drawing.Point(0, 40);
             this.addCategory.Name = "addCategory";
             this.addCategory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.addCategory.Size = new System.Drawing.Size(200, 40);
+            this.addCategory.Size = new System.Drawing.Size(167, 40);
             this.addCategory.TabIndex = 1;
             this.addCategory.Text = "Add Category";
             this.addCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,11 +108,11 @@
             this.viewCategoryBtn.FlatAppearance.BorderSize = 0;
             this.viewCategoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewCategoryBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.viewCategoryBtn.Image = global::WarehouseManagemt.Properties.Resources.eye;
+            this.viewCategoryBtn.Image = global::WarehouseManagent.Properties.Resources.eye;
             this.viewCategoryBtn.Location = new System.Drawing.Point(0, 0);
             this.viewCategoryBtn.Name = "viewCategoryBtn";
             this.viewCategoryBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.viewCategoryBtn.Size = new System.Drawing.Size(200, 40);
+            this.viewCategoryBtn.Size = new System.Drawing.Size(167, 40);
             this.viewCategoryBtn.TabIndex = 0;
             this.viewCategoryBtn.Text = "View Categories";
             this.viewCategoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,10 +127,10 @@
             this.manageCategoryBtn.FlatAppearance.BorderSize = 0;
             this.manageCategoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manageCategoryBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.manageCategoryBtn.Image = global::WarehouseManagemt.Properties.Resources.manage_cat;
+            this.manageCategoryBtn.Image = global::WarehouseManagent.Properties.Resources.manage_cat;
             this.manageCategoryBtn.Location = new System.Drawing.Point(0, 364);
             this.manageCategoryBtn.Name = "manageCategoryBtn";
-            this.manageCategoryBtn.Size = new System.Drawing.Size(200, 45);
+            this.manageCategoryBtn.Size = new System.Drawing.Size(167, 45);
             this.manageCategoryBtn.TabIndex = 4;
             this.manageCategoryBtn.Text = " Manage Categories";
             this.manageCategoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,7 +146,7 @@
             this.productMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.productMenuPanel.Location = new System.Drawing.Point(0, 260);
             this.productMenuPanel.Name = "productMenuPanel";
-            this.productMenuPanel.Size = new System.Drawing.Size(200, 104);
+            this.productMenuPanel.Size = new System.Drawing.Size(167, 104);
             this.productMenuPanel.TabIndex = 3;
             // 
             // addProductBtn
@@ -156,11 +156,11 @@
             this.addProductBtn.FlatAppearance.BorderSize = 0;
             this.addProductBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addProductBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addProductBtn.Image = global::WarehouseManagemt.Properties.Resources.prod1;
+            this.addProductBtn.Image = global::WarehouseManagent.Properties.Resources.prod1;
             this.addProductBtn.Location = new System.Drawing.Point(0, 40);
             this.addProductBtn.Name = "addProductBtn";
             this.addProductBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addProductBtn.Size = new System.Drawing.Size(200, 40);
+            this.addProductBtn.Size = new System.Drawing.Size(167, 40);
             this.addProductBtn.TabIndex = 1;
             this.addProductBtn.Text = "Add Product";
             this.addProductBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,11 +175,11 @@
             this.viewProductBtn.FlatAppearance.BorderSize = 0;
             this.viewProductBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewProductBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.viewProductBtn.Image = global::WarehouseManagemt.Properties.Resources.eye;
+            this.viewProductBtn.Image = global::WarehouseManagent.Properties.Resources.eye;
             this.viewProductBtn.Location = new System.Drawing.Point(0, 0);
             this.viewProductBtn.Name = "viewProductBtn";
             this.viewProductBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.viewProductBtn.Size = new System.Drawing.Size(200, 40);
+            this.viewProductBtn.Size = new System.Drawing.Size(167, 40);
             this.viewProductBtn.TabIndex = 0;
             this.viewProductBtn.Text = "View Products";
             this.viewProductBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,10 +194,10 @@
             this.manageProductBtn.FlatAppearance.BorderSize = 0;
             this.manageProductBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manageProductBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.manageProductBtn.Image = global::WarehouseManagemt.Properties.Resources.boxes;
+            this.manageProductBtn.Image = global::WarehouseManagent.Properties.Resources.boxes;
             this.manageProductBtn.Location = new System.Drawing.Point(0, 215);
             this.manageProductBtn.Name = "manageProductBtn";
-            this.manageProductBtn.Size = new System.Drawing.Size(200, 45);
+            this.manageProductBtn.Size = new System.Drawing.Size(167, 45);
             this.manageProductBtn.TabIndex = 2;
             this.manageProductBtn.Text = " Manage Products";
             this.manageProductBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -213,7 +213,7 @@
             this.supplierMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.supplierMenuPanel.Location = new System.Drawing.Point(0, 111);
             this.supplierMenuPanel.Name = "supplierMenuPanel";
-            this.supplierMenuPanel.Size = new System.Drawing.Size(200, 104);
+            this.supplierMenuPanel.Size = new System.Drawing.Size(167, 104);
             this.supplierMenuPanel.TabIndex = 1;
             // 
             // addSupplierBtn
@@ -223,11 +223,11 @@
             this.addSupplierBtn.FlatAppearance.BorderSize = 0;
             this.addSupplierBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addSupplierBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addSupplierBtn.Image = global::WarehouseManagemt.Properties.Resources.uuser;
+            this.addSupplierBtn.Image = global::WarehouseManagent.Properties.Resources.uuser;
             this.addSupplierBtn.Location = new System.Drawing.Point(0, 40);
             this.addSupplierBtn.Name = "addSupplierBtn";
             this.addSupplierBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addSupplierBtn.Size = new System.Drawing.Size(200, 40);
+            this.addSupplierBtn.Size = new System.Drawing.Size(167, 40);
             this.addSupplierBtn.TabIndex = 1;
             this.addSupplierBtn.Text = "Add Supplier";
             this.addSupplierBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,11 +242,11 @@
             this.viewSupplierBtn.FlatAppearance.BorderSize = 0;
             this.viewSupplierBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewSupplierBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.viewSupplierBtn.Image = global::WarehouseManagemt.Properties.Resources.eye;
+            this.viewSupplierBtn.Image = global::WarehouseManagent.Properties.Resources.eye;
             this.viewSupplierBtn.Location = new System.Drawing.Point(0, 0);
             this.viewSupplierBtn.Name = "viewSupplierBtn";
             this.viewSupplierBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.viewSupplierBtn.Size = new System.Drawing.Size(200, 40);
+            this.viewSupplierBtn.Size = new System.Drawing.Size(167, 40);
             this.viewSupplierBtn.TabIndex = 0;
             this.viewSupplierBtn.Text = "View Suppliers";
             this.viewSupplierBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,10 +261,10 @@
             this.manageSupplierBtn.FlatAppearance.BorderSize = 0;
             this.manageSupplierBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manageSupplierBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.manageSupplierBtn.Image = global::WarehouseManagemt.Properties.Resources.supp;
+            this.manageSupplierBtn.Image = global::WarehouseManagent.Properties.Resources.supp;
             this.manageSupplierBtn.Location = new System.Drawing.Point(0, 66);
             this.manageSupplierBtn.Name = "manageSupplierBtn";
-            this.manageSupplierBtn.Size = new System.Drawing.Size(200, 45);
+            this.manageSupplierBtn.Size = new System.Drawing.Size(167, 45);
             this.manageSupplierBtn.TabIndex = 1;
             this.manageSupplierBtn.Text = " Manage Suppliers";
             this.manageSupplierBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,7 +278,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 66);
+            this.panel2.Size = new System.Drawing.Size(167, 66);
             this.panel2.TabIndex = 1;
             // 
             // topBarPanel
@@ -286,9 +286,9 @@
             this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.topBarPanel.Controls.Add(this.activeFormTitle);
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topBarPanel.Location = new System.Drawing.Point(200, 0);
+            this.topBarPanel.Location = new System.Drawing.Point(167, 0);
             this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(728, 66);
+            this.topBarPanel.Size = new System.Drawing.Size(874, 66);
             this.topBarPanel.TabIndex = 2;
             // 
             // activeFormTitle
@@ -297,7 +297,7 @@
             this.activeFormTitle.AutoSize = true;
             this.activeFormTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.activeFormTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.activeFormTitle.Location = new System.Drawing.Point(314, 20);
+            this.activeFormTitle.Location = new System.Drawing.Point(387, 20);
             this.activeFormTitle.Name = "activeFormTitle";
             this.activeFormTitle.Size = new System.Drawing.Size(83, 32);
             this.activeFormTitle.TabIndex = 0;
@@ -306,17 +306,17 @@
             // childFormPanel
             // 
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.childFormPanel.Location = new System.Drawing.Point(200, 66);
+            this.childFormPanel.Location = new System.Drawing.Point(167, 66);
             this.childFormPanel.MinimumSize = new System.Drawing.Size(678, 455);
             this.childFormPanel.Name = "childFormPanel";
-            this.childFormPanel.Size = new System.Drawing.Size(728, 505);
+            this.childFormPanel.Size = new System.Drawing.Size(874, 505);
             this.childFormPanel.TabIndex = 3;
             // 
             // WarehouseManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 571);
+            this.ClientSize = new System.Drawing.Size(1041, 571);
             this.Controls.Add(this.childFormPanel);
             this.Controls.Add(this.topBarPanel);
             this.Controls.Add(this.menuPanel);

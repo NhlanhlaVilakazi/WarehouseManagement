@@ -1,8 +1,8 @@
-using WarehouseManagemt.Forms.Categories;
-using WarehouseManagemt.Forms.Products;
-using WarehouseManagemt.Forms.Supplier;
+using WarehouseManagent.Forms.Categories;
+using WarehouseManagent.Forms.Products;
+using WarehouseManagent.Forms.Supplier;
 
-namespace WarehouseManagemt
+namespace WarehouseManagent
 {
     public partial class WarehouseManagement : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace WarehouseManagemt.Forms.Products
+﻿namespace WarehouseManagent.Forms.Products
 {
     partial class AddProductForm
     {

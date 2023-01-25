@@ -1,4 +1,4 @@
-﻿namespace WarehouseManagemt.Forms.Supplier
+﻿namespace WarehouseManagent.Forms.Supplier
 {
     partial class AddSupplierForm
     {

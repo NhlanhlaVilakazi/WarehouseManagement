@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WarehouseManagemt.Forms.Products
+namespace WarehouseManagent.Forms.Products
 {
     public partial class AddProductForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace WarehouseManagemt.Forms.Categories
+﻿namespace WarehouseManagent.Forms.Categories
 {
     partial class ViewCategoryForm
     {

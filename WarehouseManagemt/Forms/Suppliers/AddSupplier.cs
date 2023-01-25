@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WarehouseManagemt.Forms.Supplier
+namespace WarehouseManagent.Forms.Supplier
 {
     public partial class AddSupplierForm : Form
     {
