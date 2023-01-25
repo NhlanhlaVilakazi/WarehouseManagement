@@ -192,7 +192,7 @@
             // 
             // reorderLevelTxt
             // 
-            this.reorderLevelTxt.Location = new System.Drawing.Point(136, 325);
+            this.reorderLevelTxt.Location = new System.Drawing.Point(136, 328);
             this.reorderLevelTxt.Name = "reorderLevelTxt";
             this.reorderLevelTxt.Size = new System.Drawing.Size(184, 23);
             this.reorderLevelTxt.TabIndex = 43;

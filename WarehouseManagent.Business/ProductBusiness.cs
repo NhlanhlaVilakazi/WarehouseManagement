@@ -24,7 +24,7 @@ namespace WarehouseManagent.Business
         public bool AddNewProduct(ProductViewModel product)
         {
             var productModel = ObjectMapper.Mapper.Map<Product>(product);
-           return _productRepository.AddProduct(productModel) != 0;
+            return _productRepository.AddProduct(productModel) != 0;
         }
     }
 }

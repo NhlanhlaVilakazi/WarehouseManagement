@@ -36,7 +36,7 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@productID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("NewProduct  @productName, @supplierId, @categoryId, @quantityPerUnit, @unitPrice" +
+            _dbContext.Database.ExecuteSqlRawAsync("NewProduct  @productName, @supplierId, @categoryId, @quantityPerUnit, @unitPrice," +
             "@unitsInStock, @unitsOnOrder, @reorderLevel, @discontinued, @productID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[9].Value ?? 0);
         }
