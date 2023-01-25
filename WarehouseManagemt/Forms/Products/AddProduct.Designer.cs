@@ -40,15 +40,15 @@
             this.backBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.quantityUnitTxt = new System.Windows.Forms.TextBox();
+            this.unitPriceTxt = new System.Windows.Forms.TextBox();
+            this.unitOrderedTxt = new System.Windows.Forms.TextBox();
+            this.reorderLevelTxt = new System.Windows.Forms.TextBox();
+            this.unitStockTxt = new System.Windows.Forms.TextBox();
+            this.productNameTxt = new System.Windows.Forms.TextBox();
+            this.discontinuedTxt = new System.Windows.Forms.ComboBox();
+            this.supplierComboBx = new System.Windows.Forms.ComboBox();
+            this.categoryComboBx = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label10
@@ -70,7 +70,6 @@
             this.label9.Size = new System.Drawing.Size(86, 15);
             this.label9.TabIndex = 63;
             this.label9.Text = "Units Ordered";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -78,9 +77,9 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(392, 307);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 15);
+            this.label8.Size = new System.Drawing.Size(80, 15);
             this.label8.TabIndex = 62;
-            this.label8.Text = "Discounted";
+            this.label8.Text = "Discontinued";
             // 
             // label6
             // 
@@ -168,81 +167,86 @@
             this.saveBtn.TabIndex = 52;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // textBox4
+            // quantityUnitTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(392, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 23);
-            this.textBox4.TabIndex = 50;
+            this.quantityUnitTxt.Location = new System.Drawing.Point(136, 207);
+            this.quantityUnitTxt.Name = "quantityUnitTxt";
+            this.quantityUnitTxt.Size = new System.Drawing.Size(184, 23);
+            this.quantityUnitTxt.TabIndex = 48;
             // 
-            // textBox9
+            // unitPriceTxt
             // 
-            this.textBox9.Location = new System.Drawing.Point(136, 207);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(184, 23);
-            this.textBox9.TabIndex = 48;
+            this.unitPriceTxt.Location = new System.Drawing.Point(392, 207);
+            this.unitPriceTxt.Name = "unitPriceTxt";
+            this.unitPriceTxt.Size = new System.Drawing.Size(184, 23);
+            this.unitPriceTxt.TabIndex = 45;
             // 
-            // textBox8
+            // unitOrderedTxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(136, 153);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(184, 23);
-            this.textBox8.TabIndex = 47;
+            this.unitOrderedTxt.Location = new System.Drawing.Point(392, 268);
+            this.unitOrderedTxt.Name = "unitOrderedTxt";
+            this.unitOrderedTxt.Size = new System.Drawing.Size(184, 23);
+            this.unitOrderedTxt.TabIndex = 44;
             // 
-            // textBox6
+            // reorderLevelTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(392, 207);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 23);
-            this.textBox6.TabIndex = 45;
+            this.reorderLevelTxt.Location = new System.Drawing.Point(136, 325);
+            this.reorderLevelTxt.Name = "reorderLevelTxt";
+            this.reorderLevelTxt.Size = new System.Drawing.Size(184, 23);
+            this.reorderLevelTxt.TabIndex = 43;
             // 
-            // textBox5
+            // unitStockTxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(392, 268);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(184, 23);
-            this.textBox5.TabIndex = 44;
+            this.unitStockTxt.Location = new System.Drawing.Point(136, 268);
+            this.unitStockTxt.Name = "unitStockTxt";
+            this.unitStockTxt.Size = new System.Drawing.Size(184, 23);
+            this.unitStockTxt.TabIndex = 42;
             // 
-            // textBox3
+            // productNameTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 325);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 23);
-            this.textBox3.TabIndex = 43;
+            this.productNameTxt.Location = new System.Drawing.Point(136, 98);
+            this.productNameTxt.Name = "productNameTxt";
+            this.productNameTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.productNameTxt.Size = new System.Drawing.Size(440, 23);
+            this.productNameTxt.TabIndex = 41;
             // 
-            // textBox2
+            // discontinuedTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 268);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 23);
-            this.textBox2.TabIndex = 42;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(136, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(440, 23);
-            this.textBox1.TabIndex = 41;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.discontinuedTxt.FormattingEnabled = true;
+            this.discontinuedTxt.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBox1.Location = new System.Drawing.Point(392, 328);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 23);
-            this.comboBox1.TabIndex = 65;
+            this.discontinuedTxt.Location = new System.Drawing.Point(392, 328);
+            this.discontinuedTxt.Name = "discontinuedTxt";
+            this.discontinuedTxt.Size = new System.Drawing.Size(184, 23);
+            this.discontinuedTxt.TabIndex = 65;
+            // 
+            // supplierComboBx
+            // 
+            this.supplierComboBx.FormattingEnabled = true;
+            this.supplierComboBx.Location = new System.Drawing.Point(136, 153);
+            this.supplierComboBx.Name = "supplierComboBx";
+            this.supplierComboBx.Size = new System.Drawing.Size(184, 23);
+            this.supplierComboBx.TabIndex = 66;
+            // 
+            // categoryComboBx
+            // 
+            this.categoryComboBx.FormattingEnabled = true;
+            this.categoryComboBx.Location = new System.Drawing.Point(392, 153);
+            this.categoryComboBx.Name = "categoryComboBx";
+            this.categoryComboBx.Size = new System.Drawing.Size(184, 23);
+            this.categoryComboBx.TabIndex = 67;
             // 
             // AddProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 466);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.categoryComboBx);
+            this.Controls.Add(this.supplierComboBx);
+            this.Controls.Add(this.discontinuedTxt);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -255,14 +259,12 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.quantityUnitTxt);
+            this.Controls.Add(this.unitPriceTxt);
+            this.Controls.Add(this.unitOrderedTxt);
+            this.Controls.Add(this.reorderLevelTxt);
+            this.Controls.Add(this.unitStockTxt);
+            this.Controls.Add(this.productNameTxt);
             this.Name = "AddProductForm";
             this.Text = "Add Product";
             this.ResumeLayout(false);
@@ -283,14 +285,14 @@
         private Button backBtn;
         private Button clearBtn;
         private Button saveBtn;
-        private TextBox textBox4;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
+        private TextBox quantityUnitTxt;
+        private TextBox unitPriceTxt;
+        private TextBox unitOrderedTxt;
+        private TextBox reorderLevelTxt;
+        private TextBox unitStockTxt;
+        private TextBox productNameTxt;
+        private ComboBox discontinuedTxt;
+        private ComboBox supplierComboBx;
+        private ComboBox categoryComboBx;
     }
 }

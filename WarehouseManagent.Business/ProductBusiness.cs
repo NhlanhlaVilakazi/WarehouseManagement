@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using WarehouseManagent.Data.DataModels;
 using WarehouseManagent.Repository;
 using WarehouseManagent.Repository.Interfaces;
 using WarehouseManagent.ViewModels;
@@ -18,6 +19,12 @@ namespace WarehouseManagent.Business
         {
             var products = _productRepository.GetAll();
             return ObjectMapper.Mapper.Map<List<ProductViewModel>>(products);
+        }
+
+        public bool AddNewProduct(ProductViewModel product)
+        {
+            var productModel = ObjectMapper.Mapper.Map<Product>(product);
+           return _productRepository.AddProduct(productModel) != 0;
         }
     }
 }
