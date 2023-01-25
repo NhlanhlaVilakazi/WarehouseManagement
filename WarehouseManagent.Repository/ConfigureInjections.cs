@@ -11,6 +11,8 @@ namespace WarehouseManagent.Repository
         {
             ServiceProvider = new ServiceCollection()
                 .AddTransient<ISupplierRepository, SupplierRepository>()
+                .AddTransient<ICategoryRepository, CategoryRepository>()
+                .AddTransient<IProductRepository, ProductRepository>() 
                 .BuildServiceProvider();
         }
     }

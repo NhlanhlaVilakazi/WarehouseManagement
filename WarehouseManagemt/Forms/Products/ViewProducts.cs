@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using WarehouseManagent.Business;
 
 namespace WarehouseManagent.Forms.Products
 {
     public partial class ViewProductsForm : Form
     {
+        private ProductBusiness productBusiness;
         public ViewProductsForm()
         {
             InitializeComponent();
+            productBusiness = new();
+        }
+
+        private void ViewProductsForm_Load(object sender, EventArgs e)
+        {
+            var products = productBusiness.GetProducts();
+            productGridView.DataSource = products;
+            productGridView.Columns[0].Visible = false;
         }
     }
 }

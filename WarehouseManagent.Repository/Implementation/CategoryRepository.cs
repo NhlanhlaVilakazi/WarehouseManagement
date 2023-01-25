@@ -5,19 +5,18 @@ using WarehouseManagent.Repository.Interfaces;
 
 namespace WarehouseManagent.Repository.Implementation
 {
-    public class SupplierRepository : ISupplierRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private DataContext _dbContext;
 
-        public SupplierRepository()
+        public CategoryRepository()
         {
             _dbContext = new();
         }
-
-        public List<Supplier> GetAll()
+        public List<Category> GetAll()
         {
-            const string query = "EXEC [GetAllSuppliers]";
-            return _dbContext.Set<Supplier>().FromSqlRaw(query).ToList();
+            const string query = "EXEC [GetAllCategories]";
+            return _dbContext.Set<Category>().FromSqlRaw(query).ToList();
         }
     }
 }

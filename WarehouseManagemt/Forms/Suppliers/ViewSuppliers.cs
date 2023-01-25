@@ -15,11 +15,8 @@ namespace WarehouseManagent.Forms.Supplier
         private void ViewSuppliersForm_Load(object sender, EventArgs e)
         {
             var suppliers = supplierBusiness.GetSuppiers();
-            foreach (var supplier in suppliers) 
-            {
-                supplierGridView.Rows.Add(supplier.ContactName, supplier.ContactTitle, supplier.ContactName,supplier.Address,
-                supplier.City, supplier.Region, supplier.PostalCode, supplier.Country, supplier.Phone, supplier.Fax, supplier.HomePage);
-            }
+            supplierGridView.DataSource = suppliers;
+            supplierGridView.Columns[0].Visible = false;
         }
     }
 }

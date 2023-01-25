@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using WarehouseManagent.Data.DataModels;
 using WarehouseManagent.Repository;
 using WarehouseManagent.Repository.Interfaces;
+using WarehouseManagent.ViewModels;
 
 namespace WarehouseManagent.Business
 {
@@ -13,9 +13,10 @@ namespace WarehouseManagent.Business
         {
             _supplierRepository = ConfigureInjections.ServiceProvider.GetRequiredService<ISupplierRepository>();
         }
-        public List<Supplier> GetSuppiers() 
+        public List<SupplierViewModel> GetSuppiers() 
         {
-            return _supplierRepository.GetAll();
+            var suppliers = _supplierRepository.GetAll();
+            return ObjectMapper.Mapper.Map<List<SupplierViewModel>>(suppliers);
         }
     }
 }

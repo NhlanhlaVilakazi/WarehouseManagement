@@ -28,61 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.productGridView = new System.Windows.Forms.DataGridView();
-            this.categoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryPicture = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
+            this.categoryGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // productGridView
+            // categoryGridView
             // 
-            this.productGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.categoryName,
-            this.description,
-            this.categoryPicture});
-            this.productGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.productGridView.Location = new System.Drawing.Point(0, 0);
-            this.productGridView.Name = "productGridView";
-            this.productGridView.RowTemplate.Height = 25;
-            this.productGridView.Size = new System.Drawing.Size(712, 466);
-            this.productGridView.TabIndex = 1;
-            // 
-            // categoryName
-            // 
-            this.categoryName.HeaderText = "CategoryName";
-            this.categoryName.Name = "categoryName";
-            // 
-            // description
-            // 
-            this.description.HeaderText = "Description";
-            this.description.Name = "description";
-            // 
-            // categoryPicture
-            // 
-            this.categoryPicture.HeaderText = "Category Picture";
-            this.categoryPicture.Name = "categoryPicture";
+            this.categoryGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.categoryGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.categoryGridView.Location = new System.Drawing.Point(0, 0);
+            this.categoryGridView.Name = "categoryGridView";
+            this.categoryGridView.RowTemplate.Height = 100;
+            this.categoryGridView.Size = new System.Drawing.Size(712, 466);
+            this.categoryGridView.TabIndex = 1;
             // 
             // ViewCategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 466);
-            this.Controls.Add(this.productGridView);
+            this.Controls.Add(this.categoryGridView);
             this.Name = "ViewCategoryForm";
             this.Text = "View Category";
-            ((System.ComponentModel.ISupportInitialize)(this.productGridView)).EndInit();
+            this.Load += new System.EventHandler(this.ViewCategoryForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DataGridView productGridView;
-        private DataGridViewTextBoxColumn categoryName;
-        private DataGridViewTextBoxColumn description;
-        private DataGridViewTextBoxColumn categoryPicture;
+        private DataGridView categoryGridView;
     }
 }

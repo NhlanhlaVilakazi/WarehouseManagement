@@ -2,8 +2,8 @@
 
 namespace WarehouseManagent.Repository.Interfaces
 {
-    public interface ISupplierRepository
+    public interface ICategoryRepository
     {
-        List<Supplier> GetAll();
+        List<Category> GetAll();
     }
 }

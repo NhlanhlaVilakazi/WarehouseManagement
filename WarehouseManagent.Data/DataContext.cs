@@ -15,7 +15,9 @@ namespace WarehouseManagent.Data
 {
     public class DataContext : DbContext
     {
-        public DbSet<Supplier> Alert { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public new DbSet<TEntity> Set<TEntity>() where TEntity : class
         {
