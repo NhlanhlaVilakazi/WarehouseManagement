@@ -31,17 +31,17 @@
             this.backBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.addressRichTxt = new System.Windows.Forms.RichTextBox();
+            this.companyNameTxt = new System.Windows.Forms.TextBox();
+            this.homePageTxt = new System.Windows.Forms.TextBox();
+            this.cityTxt = new System.Windows.Forms.TextBox();
+            this.contactNameTxt = new System.Windows.Forms.TextBox();
+            this.phoneTxt = new System.Windows.Forms.TextBox();
+            this.countryTxt = new System.Windows.Forms.TextBox();
+            this.faxTxt = new System.Windows.Forms.TextBox();
+            this.postalCodeTxt = new System.Windows.Forms.TextBox();
+            this.regionTxt = new System.Windows.Forms.TextBox();
+            this.contactTitleTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -81,85 +81,86 @@
             this.saveBtn.TabIndex = 27;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // richTextBox1
+            // addressRichTxt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(388, 96);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(184, 138);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.addressRichTxt.Location = new System.Drawing.Point(388, 96);
+            this.addressRichTxt.Name = "addressRichTxt";
+            this.addressRichTxt.Size = new System.Drawing.Size(184, 138);
+            this.addressRichTxt.TabIndex = 26;
+            this.addressRichTxt.Text = "";
             // 
-            // textBox4
+            // companyNameTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(388, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 23);
-            this.textBox4.TabIndex = 25;
+            this.companyNameTxt.Location = new System.Drawing.Point(388, 41);
+            this.companyNameTxt.Name = "companyNameTxt";
+            this.companyNameTxt.Size = new System.Drawing.Size(184, 23);
+            this.companyNameTxt.TabIndex = 25;
             // 
-            // textBox10
+            // homePageTxt
             // 
-            this.textBox10.Location = new System.Drawing.Point(132, 385);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(440, 23);
-            this.textBox10.TabIndex = 24;
+            this.homePageTxt.Location = new System.Drawing.Point(132, 385);
+            this.homePageTxt.Name = "homePageTxt";
+            this.homePageTxt.Size = new System.Drawing.Size(440, 23);
+            this.homePageTxt.TabIndex = 24;
             // 
-            // textBox9
+            // cityTxt
             // 
-            this.textBox9.Location = new System.Drawing.Point(132, 150);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(184, 23);
-            this.textBox9.TabIndex = 23;
+            this.cityTxt.Location = new System.Drawing.Point(132, 150);
+            this.cityTxt.Name = "cityTxt";
+            this.cityTxt.Size = new System.Drawing.Size(184, 23);
+            this.cityTxt.TabIndex = 23;
             // 
-            // textBox8
+            // contactNameTxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(132, 96);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(184, 23);
-            this.textBox8.TabIndex = 22;
+            this.contactNameTxt.Location = new System.Drawing.Point(132, 96);
+            this.contactNameTxt.Name = "contactNameTxt";
+            this.contactNameTxt.Size = new System.Drawing.Size(184, 23);
+            this.contactNameTxt.TabIndex = 22;
             // 
-            // textBox7
+            // phoneTxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(132, 324);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(184, 23);
-            this.textBox7.TabIndex = 21;
+            this.phoneTxt.Location = new System.Drawing.Point(132, 324);
+            this.phoneTxt.Name = "phoneTxt";
+            this.phoneTxt.Size = new System.Drawing.Size(184, 23);
+            this.phoneTxt.TabIndex = 21;
             // 
-            // textBox6
+            // countryTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(388, 268);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 23);
-            this.textBox6.TabIndex = 20;
+            this.countryTxt.Location = new System.Drawing.Point(388, 268);
+            this.countryTxt.Name = "countryTxt";
+            this.countryTxt.Size = new System.Drawing.Size(184, 23);
+            this.countryTxt.TabIndex = 20;
             // 
-            // textBox5
+            // faxTxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(388, 324);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(184, 23);
-            this.textBox5.TabIndex = 19;
+            this.faxTxt.Location = new System.Drawing.Point(388, 324);
+            this.faxTxt.Name = "faxTxt";
+            this.faxTxt.Size = new System.Drawing.Size(184, 23);
+            this.faxTxt.TabIndex = 19;
             // 
-            // textBox3
+            // postalCodeTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 268);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 23);
-            this.textBox3.TabIndex = 18;
+            this.postalCodeTxt.Location = new System.Drawing.Point(132, 268);
+            this.postalCodeTxt.Name = "postalCodeTxt";
+            this.postalCodeTxt.Size = new System.Drawing.Size(184, 23);
+            this.postalCodeTxt.TabIndex = 18;
             // 
-            // textBox2
+            // regionTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 23);
-            this.textBox2.TabIndex = 17;
+            this.regionTxt.Location = new System.Drawing.Point(132, 211);
+            this.regionTxt.Name = "regionTxt";
+            this.regionTxt.Size = new System.Drawing.Size(184, 23);
+            this.regionTxt.TabIndex = 17;
             // 
-            // textBox1
+            // contactTitleTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(184, 23);
-            this.textBox1.TabIndex = 16;
+            this.contactTitleTxt.Location = new System.Drawing.Point(132, 41);
+            this.contactTitleTxt.Name = "contactTitleTxt";
+            this.contactTitleTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.contactTitleTxt.Size = new System.Drawing.Size(184, 23);
+            this.contactTitleTxt.TabIndex = 16;
             // 
             // label1
             // 
@@ -290,17 +291,17 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addressRichTxt);
+            this.Controls.Add(this.companyNameTxt);
+            this.Controls.Add(this.homePageTxt);
+            this.Controls.Add(this.cityTxt);
+            this.Controls.Add(this.contactNameTxt);
+            this.Controls.Add(this.phoneTxt);
+            this.Controls.Add(this.countryTxt);
+            this.Controls.Add(this.faxTxt);
+            this.Controls.Add(this.postalCodeTxt);
+            this.Controls.Add(this.regionTxt);
+            this.Controls.Add(this.contactTitleTxt);
             this.Name = "AddSupplierForm";
             this.Text = "Add Supplier";
             this.ResumeLayout(false);
@@ -313,17 +314,17 @@
         private Button backBtn;
         private Button clearBtn;
         private Button saveBtn;
-        private RichTextBox richTextBox1;
-        private TextBox textBox4;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private RichTextBox addressRichTxt;
+        private TextBox companyNameTxt;
+        private TextBox homePageTxt;
+        private TextBox cityTxt;
+        private TextBox contactNameTxt;
+        private TextBox phoneTxt;
+        private TextBox countryTxt;
+        private TextBox faxTxt;
+        private TextBox postalCodeTxt;
+        private TextBox regionTxt;
+        private TextBox contactTitleTxt;
         private Label label1;
         private Label label2;
         private Label label3;

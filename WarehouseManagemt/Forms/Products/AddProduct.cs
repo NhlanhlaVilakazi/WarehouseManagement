@@ -1,7 +1,6 @@
 ﻿using WarehouseManagent.Business;
 using WarehouseManagent.Helpers;
 using WarehouseManagent.ViewModels;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace WarehouseManagent.Forms.Products
 {
