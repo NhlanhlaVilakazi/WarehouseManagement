@@ -134,6 +134,7 @@
             this.imageBrowseBtn.TabIndex = 89;
             this.imageBrowseBtn.Text = "Select Image";
             this.imageBrowseBtn.UseVisualStyleBackColor = true;
+            this.imageBrowseBtn.Click += new System.EventHandler(this.imageBrowseBtn_Click);
             // 
             // AddCategoryForm
             // 
