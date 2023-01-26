@@ -45,7 +45,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(278, 158);
+            this.label10.Location = new System.Drawing.Point(170, 158);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 15);
             this.label10.TabIndex = 85;
@@ -55,7 +55,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(278, 104);
+            this.label6.Location = new System.Drawing.Point(170, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 15);
             this.label6.TabIndex = 82;
@@ -64,7 +64,7 @@
             // backBtn
             // 
             this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backBtn.Location = new System.Drawing.Point(293, 395);
+            this.backBtn.Location = new System.Drawing.Point(171, 395);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 23);
             this.backBtn.TabIndex = 76;
@@ -74,7 +74,7 @@
             // clearBtn
             // 
             this.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearBtn.Location = new System.Drawing.Point(473, 395);
+            this.clearBtn.Location = new System.Drawing.Point(428, 395);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(75, 23);
             this.clearBtn.TabIndex = 75;
@@ -90,6 +90,7 @@
             this.saveBtn.TabIndex = 74;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // label5
             // 
@@ -111,26 +112,26 @@
             // 
             // descriptionRichTxt
             // 
-            this.descriptionRichTxt.Location = new System.Drawing.Point(282, 176);
+            this.descriptionRichTxt.Location = new System.Drawing.Point(171, 176);
             this.descriptionRichTxt.Name = "descriptionRichTxt";
-            this.descriptionRichTxt.Size = new System.Drawing.Size(180, 113);
+            this.descriptionRichTxt.Size = new System.Drawing.Size(291, 113);
             this.descriptionRichTxt.TabIndex = 87;
             this.descriptionRichTxt.Text = "";
             // 
             // categoryComboBx
             // 
             this.categoryComboBx.FormattingEnabled = true;
-            this.categoryComboBx.Location = new System.Drawing.Point(282, 122);
+            this.categoryComboBx.Location = new System.Drawing.Point(171, 122);
             this.categoryComboBx.Name = "categoryComboBx";
-            this.categoryComboBx.Size = new System.Drawing.Size(180, 23);
+            this.categoryComboBx.Size = new System.Drawing.Size(291, 23);
             this.categoryComboBx.TabIndex = 88;
             // 
             // imageBrowseBtn
             // 
             this.imageBrowseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imageBrowseBtn.Location = new System.Drawing.Point(282, 306);
+            this.imageBrowseBtn.Location = new System.Drawing.Point(171, 306);
             this.imageBrowseBtn.Name = "imageBrowseBtn";
-            this.imageBrowseBtn.Size = new System.Drawing.Size(180, 23);
+            this.imageBrowseBtn.Size = new System.Drawing.Size(291, 23);
             this.imageBrowseBtn.TabIndex = 89;
             this.imageBrowseBtn.Text = "Select Image";
             this.imageBrowseBtn.UseVisualStyleBackColor = true;
