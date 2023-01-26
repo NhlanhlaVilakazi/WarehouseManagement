@@ -299,9 +299,8 @@
             this.activeFormTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.activeFormTitle.Location = new System.Drawing.Point(387, 20);
             this.activeFormTitle.Name = "activeFormTitle";
-            this.activeFormTitle.Size = new System.Drawing.Size(83, 32);
+            this.activeFormTitle.Size = new System.Drawing.Size(0, 32);
             this.activeFormTitle.TabIndex = 0;
-            this.activeFormTitle.Text = "label1";
             // 
             // childFormPanel
             // 

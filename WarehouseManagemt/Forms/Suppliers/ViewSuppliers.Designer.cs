@@ -50,7 +50,7 @@
             this.ClientSize = new System.Drawing.Size(1009, 466);
             this.Controls.Add(this.supplierGridView);
             this.Name = "ViewSuppliersForm";
-            this.Text = "View Suppliers";
+            this.Text = "All Supplier(s)";
             this.Load += new System.EventHandler(this.ViewSuppliersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).EndInit();
             this.ResumeLayout(false);

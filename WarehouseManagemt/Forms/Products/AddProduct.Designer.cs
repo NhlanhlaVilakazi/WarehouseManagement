@@ -55,7 +55,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(136, 189);
+            this.label10.Location = new System.Drawing.Point(252, 189);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 15);
             this.label10.TabIndex = 64;
@@ -65,7 +65,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(392, 250);
+            this.label9.Location = new System.Drawing.Point(508, 250);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 15);
             this.label9.TabIndex = 63;
@@ -75,7 +75,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(392, 307);
+            this.label8.Location = new System.Drawing.Point(508, 307);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 15);
             this.label8.TabIndex = 62;
@@ -85,7 +85,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(136, 135);
+            this.label6.Location = new System.Drawing.Point(252, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 15);
             this.label6.TabIndex = 60;
@@ -95,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(392, 135);
+            this.label5.Location = new System.Drawing.Point(508, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 59;
@@ -105,7 +105,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(136, 307);
+            this.label4.Location = new System.Drawing.Point(252, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 15);
             this.label4.TabIndex = 58;
@@ -115,7 +115,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(392, 189);
+            this.label3.Location = new System.Drawing.Point(508, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 15);
             this.label3.TabIndex = 57;
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(136, 250);
+            this.label2.Location = new System.Drawing.Point(252, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 15);
             this.label2.TabIndex = 56;
@@ -135,7 +135,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(136, 80);
+            this.label1.Location = new System.Drawing.Point(252, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 15);
             this.label1.TabIndex = 55;
@@ -143,7 +143,7 @@
             // 
             // backBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(136, 427);
+            this.backBtn.Location = new System.Drawing.Point(252, 427);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 23);
             this.backBtn.TabIndex = 54;
@@ -152,7 +152,7 @@
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(322, 427);
+            this.clearBtn.Location = new System.Drawing.Point(438, 427);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(75, 23);
             this.clearBtn.TabIndex = 53;
@@ -161,7 +161,7 @@
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(501, 427);
+            this.saveBtn.Location = new System.Drawing.Point(617, 427);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);
             this.saveBtn.TabIndex = 52;
@@ -171,42 +171,42 @@
             // 
             // quantityUnitTxt
             // 
-            this.quantityUnitTxt.Location = new System.Drawing.Point(136, 207);
+            this.quantityUnitTxt.Location = new System.Drawing.Point(252, 207);
             this.quantityUnitTxt.Name = "quantityUnitTxt";
             this.quantityUnitTxt.Size = new System.Drawing.Size(184, 23);
             this.quantityUnitTxt.TabIndex = 48;
             // 
             // unitPriceTxt
             // 
-            this.unitPriceTxt.Location = new System.Drawing.Point(392, 207);
+            this.unitPriceTxt.Location = new System.Drawing.Point(508, 207);
             this.unitPriceTxt.Name = "unitPriceTxt";
             this.unitPriceTxt.Size = new System.Drawing.Size(184, 23);
             this.unitPriceTxt.TabIndex = 45;
             // 
             // unitOrderedTxt
             // 
-            this.unitOrderedTxt.Location = new System.Drawing.Point(392, 268);
+            this.unitOrderedTxt.Location = new System.Drawing.Point(508, 268);
             this.unitOrderedTxt.Name = "unitOrderedTxt";
             this.unitOrderedTxt.Size = new System.Drawing.Size(184, 23);
             this.unitOrderedTxt.TabIndex = 44;
             // 
             // reorderLevelTxt
             // 
-            this.reorderLevelTxt.Location = new System.Drawing.Point(136, 328);
+            this.reorderLevelTxt.Location = new System.Drawing.Point(252, 328);
             this.reorderLevelTxt.Name = "reorderLevelTxt";
             this.reorderLevelTxt.Size = new System.Drawing.Size(184, 23);
             this.reorderLevelTxt.TabIndex = 43;
             // 
             // unitStockTxt
             // 
-            this.unitStockTxt.Location = new System.Drawing.Point(136, 268);
+            this.unitStockTxt.Location = new System.Drawing.Point(252, 268);
             this.unitStockTxt.Name = "unitStockTxt";
             this.unitStockTxt.Size = new System.Drawing.Size(184, 23);
             this.unitStockTxt.TabIndex = 42;
             // 
             // productNameTxt
             // 
-            this.productNameTxt.Location = new System.Drawing.Point(136, 98);
+            this.productNameTxt.Location = new System.Drawing.Point(252, 98);
             this.productNameTxt.Name = "productNameTxt";
             this.productNameTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.productNameTxt.Size = new System.Drawing.Size(440, 23);
@@ -218,7 +218,7 @@
             this.discontinuedTxt.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.discontinuedTxt.Location = new System.Drawing.Point(392, 328);
+            this.discontinuedTxt.Location = new System.Drawing.Point(508, 328);
             this.discontinuedTxt.Name = "discontinuedTxt";
             this.discontinuedTxt.Size = new System.Drawing.Size(184, 23);
             this.discontinuedTxt.TabIndex = 65;
@@ -226,7 +226,7 @@
             // supplierComboBx
             // 
             this.supplierComboBx.FormattingEnabled = true;
-            this.supplierComboBx.Location = new System.Drawing.Point(136, 153);
+            this.supplierComboBx.Location = new System.Drawing.Point(252, 153);
             this.supplierComboBx.Name = "supplierComboBx";
             this.supplierComboBx.Size = new System.Drawing.Size(184, 23);
             this.supplierComboBx.TabIndex = 66;
@@ -234,7 +234,7 @@
             // categoryComboBx
             // 
             this.categoryComboBx.FormattingEnabled = true;
-            this.categoryComboBx.Location = new System.Drawing.Point(392, 153);
+            this.categoryComboBx.Location = new System.Drawing.Point(508, 153);
             this.categoryComboBx.Name = "categoryComboBx";
             this.categoryComboBx.Size = new System.Drawing.Size(184, 23);
             this.categoryComboBx.TabIndex = 67;
@@ -243,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 466);
+            this.ClientSize = new System.Drawing.Size(1009, 466);
             this.Controls.Add(this.categoryComboBx);
             this.Controls.Add(this.supplierComboBx);
             this.Controls.Add(this.discontinuedTxt);

@@ -40,17 +40,17 @@
             this.categoryGridView.Location = new System.Drawing.Point(0, 0);
             this.categoryGridView.Name = "categoryGridView";
             this.categoryGridView.RowTemplate.Height = 100;
-            this.categoryGridView.Size = new System.Drawing.Size(712, 466);
+            this.categoryGridView.Size = new System.Drawing.Size(1009, 466);
             this.categoryGridView.TabIndex = 1;
             // 
             // ViewCategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 466);
+            this.ClientSize = new System.Drawing.Size(1009, 466);
             this.Controls.Add(this.categoryGridView);
             this.Name = "ViewCategoryForm";
-            this.Text = "View Category";
+            this.Text = "All Categories";
             this.Load += new System.EventHandler(this.ViewCategoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).EndInit();
             this.ResumeLayout(false);

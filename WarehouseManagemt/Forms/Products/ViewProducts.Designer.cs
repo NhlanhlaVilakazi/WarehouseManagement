@@ -40,17 +40,17 @@
             this.productGridView.Location = new System.Drawing.Point(0, 0);
             this.productGridView.Name = "productGridView";
             this.productGridView.RowTemplate.Height = 25;
-            this.productGridView.Size = new System.Drawing.Size(712, 466);
+            this.productGridView.Size = new System.Drawing.Size(1009, 466);
             this.productGridView.TabIndex = 1;
             // 
             // ViewProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 466);
+            this.ClientSize = new System.Drawing.Size(1009, 466);
             this.Controls.Add(this.productGridView);
             this.Name = "ViewProductsForm";
-            this.Text = "View Products";
+            this.Text = "All Product(s)";
             this.Load += new System.EventHandler(this.ViewProductsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productGridView)).EndInit();
             this.ResumeLayout(false);
