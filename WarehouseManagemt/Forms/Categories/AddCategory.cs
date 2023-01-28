@@ -7,7 +7,7 @@ namespace WarehouseManagent.Forms.Categories
 {
     public partial class AddCategoryForm : Form
     {
-        private PopulateDopdowns dropdown;
+        private Dropdowns dropdown;
         private CategoryBusiness categoryBusiness;
         private Bitmap imageBit;
         public AddCategoryForm()

@@ -1,11 +1,10 @@
 ﻿using WarehouseManagent.Business;
-using WarehouseManagent.Data.DataModels;
 
 namespace WarehouseManagent.Helpers
 {
-    public class PopulateDopdowns
+    public class Dropdowns
     {
-        public void PopulateSupplier(ComboBox comboBox)
+        public void PopulateSupplierDropDown(ComboBox comboBox)
         {  
             var suppliers = new SupplierBusiness().GetSuppiers();
             comboBox.DataSource = suppliers;

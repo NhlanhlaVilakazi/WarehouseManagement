@@ -6,7 +6,7 @@ namespace WarehouseManagent.Forms.Supplier
     public partial class ViewSuppliersForm : Form
     {
         private SupplierBusiness supplierBusiness;
-        private HidePrimaryKeyFields keyFields;
+        private PrimaryKeyFields keyFields;
 
 
         public ViewSuppliersForm()

@@ -1,6 +1,6 @@
 ﻿namespace WarehouseManagent.Helpers
 {
-    public class HidePrimaryKeyFields
+    public class PrimaryKeyFields
     {
         public void HideFields(DataGridView gridView, int total)
         {

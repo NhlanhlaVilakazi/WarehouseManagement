@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography;
-using WarehouseManagent.Business;
+﻿using WarehouseManagent.Business;
 using WarehouseManagent.Helpers;
 
 namespace WarehouseManagent.Forms.Categories
@@ -7,7 +6,7 @@ namespace WarehouseManagent.Forms.Categories
     public partial class ViewCategoryForm : Form
     {
         private CategoryBusiness categoryBusiness;
-        private HidePrimaryKeyFields keyFields;
+        private PrimaryKeyFields keyFields;
         public ViewCategoryForm()
         {
             InitializeComponent();

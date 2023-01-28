@@ -6,7 +6,7 @@ namespace WarehouseManagent.Forms.Products
     public partial class ViewProductsForm : Form
     {
         private ProductBusiness productBusiness;
-        private HidePrimaryKeyFields keyFields;
+        private PrimaryKeyFields keyFields;
         public ViewProductsForm()
         {
             InitializeComponent();
