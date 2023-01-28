@@ -2,7 +2,7 @@
 
 namespace WarehouseManagent.Helpers
 {
-    public class Dropdowns
+    public class DropdownHelper
     {
         public void PopulateSupplierDropDown(ComboBox comboBox)
         {  

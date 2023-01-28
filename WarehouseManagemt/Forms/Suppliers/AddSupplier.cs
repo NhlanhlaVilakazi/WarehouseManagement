@@ -1,4 +1,5 @@
 ﻿using WarehouseManagent.Business;
+using WarehouseManagent.Helpers;
 using WarehouseManagent.ViewModels;
 
 namespace WarehouseManagent.Forms.Supplier
@@ -6,9 +7,11 @@ namespace WarehouseManagent.Forms.Supplier
     public partial class AddSupplierForm : Form
     {
         private SupplierBusiness supplierBusiness;
+        private UserFeedBack feedBack;
         public AddSupplierForm()
         {
             InitializeComponent();
+            feedBack = new();
             supplierBusiness = new();
         }
 
@@ -20,8 +23,7 @@ namespace WarehouseManagent.Forms.Supplier
                 return;
             }
             bool success = supplierBusiness.AddNewSupplier(GetSupplierModel());
-            if (success) MessageBox.Show("Supplier successfully added!");
-            else MessageBox.Show("An error occured while processing the rquest, please try again later..");
+            feedBack.ShowFeedbackAlert(success, "Supplier", "added");
         }
 
 

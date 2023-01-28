@@ -23,7 +23,8 @@ namespace WarehouseManagent.Repository.Implementation
 
         public int AddCategory(Category category)
         {
-            SqlParameter[] parameters = {
+            SqlParameter[] parameters = 
+            {
                 new SqlParameter("@categoryName", category.CategoryName),
                 new SqlParameter("@description", category.Description),
                 new SqlParameter("@picture", category.Picture),
@@ -32,6 +33,16 @@ namespace WarehouseManagent.Repository.Implementation
 
             _dbContext.Database.ExecuteSqlRawAsync("NewCategory  @categoryName, @description, @picture, @categoryID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[3].Value ?? 0);
+        }
+
+        public int DeteleCategory(int categoryID)
+        {
+            SqlParameter[] parameter = 
+            {
+                new SqlParameter("@categoryID", categoryID)
+            };
+
+            return _dbContext.Database.ExecuteSqlRawAsync("DeleteCategory @categoryID", parameter).GetAwaiter().GetResult();
         }
     }
 }

@@ -7,13 +7,15 @@ namespace WarehouseManagent.Forms.Categories
 {
     public partial class AddCategoryForm : Form
     {
-        private Dropdowns dropdown;
+        private DropdownHelper dropdown;
         private CategoryBusiness categoryBusiness;
-        private Bitmap imageBit;
+        private UserFeedBack feedBack;
+        private Bitmap? imageBit;
         public AddCategoryForm()
         {
             InitializeComponent();
             dropdown = new();
+            feedBack = new();
             categoryBusiness = new();
             dropdown.PopulateCategoryDropDown(categoryComboBx);
         }
@@ -37,8 +39,7 @@ namespace WarehouseManagent.Forms.Categories
                 return;
             }
             bool success = categoryBusiness.AddNewCategory(GetCategoryModel());
-            if (success) MessageBox.Show("Category successfully added!");
-            else MessageBox.Show("An error occured while processing the rquest, please try again later..");
+            feedBack.ShowFeedbackAlert(success, "Category", "added");
         }
 
         public bool ValidateInput()

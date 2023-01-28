@@ -6,5 +6,7 @@ namespace WarehouseManagent.Repository.Interfaces
     {
         List<Category> GetAll();
         int AddCategory(Category category);
+
+        int DeteleCategory(int categoryID);
     }
 }

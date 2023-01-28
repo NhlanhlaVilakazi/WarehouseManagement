@@ -26,5 +26,10 @@ namespace WarehouseManagent.Business
             var categoryModel = ObjectMapper.Mapper.Map<Category>(category);
             return _categoryRepository.AddCategory(categoryModel) > 0;
         }
+
+        public bool RemoveCategory(int categoryID)
+        {
+            return _categoryRepository.DeteleCategory(categoryID) > 0;
+        }
     }
 }

@@ -7,12 +7,14 @@ namespace WarehouseManagent.Forms.Products
     public partial class AddProductForm : Form
     {
         private ProductBusiness productBusiness;
-        private Dropdowns dropdowns;
+        private DropdownHelper dropdowns;
+        private UserFeedBack feedBack;
         public AddProductForm()
         {
             InitializeComponent();
             productBusiness = new();
             dropdowns = new();
+            feedBack = new();
 
             dropdowns.PopulateSupplierDropDown(supplierComboBx);
             dropdowns.PopulateCategoryDropDown(categoryComboBx);
@@ -26,8 +28,7 @@ namespace WarehouseManagent.Forms.Products
                 return;
             }
             bool success = productBusiness.AddNewProduct(GetProductModel());
-            if (success) MessageBox.Show("Product successfully added!");
-            else MessageBox.Show("An error occured while processing the rquest, please try again later..");
+            feedBack.ShowFeedbackAlert(success, "Product", "added");
         }
 
         public bool ValidateInput()
