@@ -26,5 +26,10 @@ namespace WarehouseManagent.Business
             var productModel = ObjectMapper.Mapper.Map<Product>(product);
             return _productRepository.AddProduct(productModel) != 0;
         }
+
+        public bool RemoveProduct(int productID)
+        {
+            return _productRepository.DeleteProduct(productID) > 0;
+        }
     }
 }

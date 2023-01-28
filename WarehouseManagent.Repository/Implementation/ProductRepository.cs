@@ -23,7 +23,8 @@ namespace WarehouseManagent.Repository.Implementation
 
         public int AddProduct(Product product)
         {
-            SqlParameter[] parameters = {
+            SqlParameter[] parameters = 
+            {
                 new SqlParameter("@productName", product.ProductName),
                 new SqlParameter("@supplierId", product.SupplierID),
                 new SqlParameter("@categoryId", product.CategoryID),
@@ -39,6 +40,16 @@ namespace WarehouseManagent.Repository.Implementation
             _dbContext.Database.ExecuteSqlRawAsync("NewProduct  @productName, @supplierId, @categoryId, @quantityPerUnit, @unitPrice," +
             "@unitsInStock, @unitsOnOrder, @reorderLevel, @discontinued, @productID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[9].Value ?? 0);
+        }
+
+        public int DeleteProduct(int productID)
+        {
+            SqlParameter[] parameter =
+            {
+                new SqlParameter("@productID", productID)
+            };
+
+            return _dbContext.Database.ExecuteSqlRawAsync("DeleteProduct @productID", parameter).GetAwaiter().GetResult();
         }
     }
 }

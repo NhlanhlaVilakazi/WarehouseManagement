@@ -24,7 +24,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (categoryGridView.Columns[e.ColumnIndex].HeaderText.Equals(ActionEnum.Delete.ToString()))
+            if (gridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Delete.ToString()))
             {
                 string? category = gridViewHelper.GetCellValue(e, categoryGridView, "CategoryName").ToString();
                 DialogResult dialogResult = MessageBox.Show($"This action will delete all the products that are in the {category} " +
@@ -34,8 +34,8 @@ namespace WarehouseManagent.Forms.Categories
                     int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
                     bool success = categoryBusiness.RemoveCategory(categoryId);
                     feedBack.ShowFeedbackAlert(success, "Category", "deleted");
-                }
-                    
+                    categoryGridView.Refresh();
+                }  
             }
         }
 
