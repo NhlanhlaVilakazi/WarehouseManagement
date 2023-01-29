@@ -1,11 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-using System.Reflection.Metadata;
 using WarehouseManagent.Data;
 using WarehouseManagent.Data.DataModels;
 using WarehouseManagent.Repository.Interfaces;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WarehouseManagent.Repository.Implementation
 {
@@ -33,7 +31,7 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@categoryID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("NewCategory  @categoryName, @description, @picture, @categoryID OUT", parameters).GetAwaiter().GetResult();
+            _dbContext.Database.ExecuteSqlRawAsync("[NewCategory]  @categoryName, @description, @picture, @categoryID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[3].Value ?? 0);
         }
 
@@ -43,7 +41,7 @@ namespace WarehouseManagent.Repository.Implementation
             {
                 new SqlParameter("@categoryID", categoryID)
             };
-            return _dbContext.Database.ExecuteSqlRawAsync("DeleteCategory @categoryID", parameter).GetAwaiter().GetResult();
+            return _dbContext.Database.ExecuteSqlRawAsync("[DeleteCategory] @categoryID", parameter).GetAwaiter().GetResult();
         }
 
         public Category? GetCategoryById(int categoryID)
@@ -65,7 +63,7 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@picture", category.Picture),
                 new SqlParameter("@categoryID", category.CategoryID)
             };
-            return _dbContext.Database.ExecuteSqlRawAsync("UpdateCategory @categoryName, @description, @picture, @categoryID", parameters).GetAwaiter().GetResult();
+            return _dbContext.Database.ExecuteSqlRawAsync("[UpdateCategory] @categoryName, @description, @picture, @categoryID", parameters).GetAwaiter().GetResult();
         }
     }
 }

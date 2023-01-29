@@ -37,7 +37,7 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@productID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("NewProduct  @productName, @supplierId, @categoryId, @quantityPerUnit, @unitPrice," +
+            _dbContext.Database.ExecuteSqlRawAsync("[NewProduct]  @productName, @supplierId, @categoryId, @quantityPerUnit, @unitPrice," +
             "@unitsInStock, @unitsOnOrder, @reorderLevel, @discontinued, @productID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[9].Value ?? 0);
         }
@@ -48,8 +48,37 @@ namespace WarehouseManagent.Repository.Implementation
             {
                 new SqlParameter("@productID", productID)
             };
+            return _dbContext.Database.ExecuteSqlRawAsync("[DeleteProduct] @productID", parameter).GetAwaiter().GetResult();
+        }
 
-            return _dbContext.Database.ExecuteSqlRawAsync("DeleteProduct @productID", parameter).GetAwaiter().GetResult();
+        public Product? GetProductById(int productID)
+        {
+            SqlParameter[] parameter =
+            {
+                new SqlParameter("@productID", productID)
+            };
+            const string query = "EXEC [GetProduct] @productID";
+            return _dbContext.Set<Product>().FromSqlRaw(query, parameter).ToList().SingleOrDefault();
+        }
+
+        public int UpdateProduct(Product product)
+        {
+            SqlParameter[] parameters =
+           {
+                new SqlParameter("@productName", product.ProductName),
+                new SqlParameter("@supplierId", product.SupplierID),
+                new SqlParameter("@categoryId", product.CategoryID),
+                new SqlParameter("@quantityPerUnit", product.QuantityPerUnit),
+                new SqlParameter("@unitPrice", product.UnitPrice),
+                new SqlParameter("@unitsInStock", product.UnitsInStock),
+                new SqlParameter("@unitsOnOrder", product.UnitsOnOrder),
+                new SqlParameter("@reorderLevel", product.ReorderLevel),
+                new SqlParameter("@discontinued", product.Discontinued),
+                new SqlParameter("@productID", product.ProductID)
+            };
+
+            return _dbContext.Database.ExecuteSqlRawAsync("[UpdateProduct]  @productName, @supplierId, @categoryId, @quantityPerUnit," +
+            "@unitPrice, @unitsInStock, @unitsOnOrder, @reorderLevel, @discontinued, @productID", parameters).GetAwaiter().GetResult();
         }
     }
 }

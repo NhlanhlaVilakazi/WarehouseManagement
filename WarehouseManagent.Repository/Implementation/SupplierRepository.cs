@@ -40,7 +40,7 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@supplierID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("NewSupplier  @companyName, @contactName, @contactTitle, @address, " +
+            _dbContext.Database.ExecuteSqlRawAsync("[NewSupplier]  @companyName, @contactName, @contactTitle, @address, " +
             "@city, region, @postalCode, @country, @phone, @fax, @homePage, @supplierID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[11].Value ?? 0);
         }
@@ -51,8 +51,7 @@ namespace WarehouseManagent.Repository.Implementation
             {
                 new SqlParameter("@supplierID", supplierID)
             };
-
-            return _dbContext.Database.ExecuteSqlRawAsync("DeleteSupplier @supplierID", parameter).GetAwaiter().GetResult();
+            return _dbContext.Database.ExecuteSqlRawAsync("[DeleteSupplier] @supplierID", parameter).GetAwaiter().GetResult();
         }
     }
 }
