@@ -30,5 +30,17 @@ namespace WarehouseManagent.Business
         {
             return _supplierRepository.DeleteSupplier(supplierID) > 0;
         }
+
+        public SupplierViewModel GetSupplierById(int supplierID) 
+        {
+            var supplier = _supplierRepository.GetSupplierById(supplierID);
+            return ObjectMapper.Mapper.Map<SupplierViewModel>(supplier);
+        }
+
+        public bool UpdateSupplier(SupplierViewModel supplier)
+        {
+            var supplierModel = ObjectMapper.Mapper.Map<Supplier>(supplier);
+            return _supplierRepository.UpdateSupplier(supplierModel) > 0;
+        }
     }
 }

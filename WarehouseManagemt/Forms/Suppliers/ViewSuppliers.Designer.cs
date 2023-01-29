@@ -43,7 +43,7 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HomePage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.supplierGridView)).BeginInit();
@@ -76,7 +76,7 @@
             this.Phone,
             this.Fax,
             this.HomePage,
-            this.Edit,
+            this.Update,
             this.Delete,
             this.dataGridViewTextBoxColumn1});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -182,13 +182,13 @@
             this.HomePage.Name = "HomePage";
             this.HomePage.ReadOnly = true;
             // 
-            // Edit
+            // Update
             // 
-            this.Edit.HeaderText = "Edit";
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Text = "Edit";
-            this.Edit.UseColumnTextForButtonValue = true;
+            this.Update.HeaderText = "Update";
+            this.Update.Name = "Update";
+            this.Update.ReadOnly = true;
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
             // 
             // Delete
             // 
@@ -234,7 +234,7 @@
         private DataGridViewTextBoxColumn Phone;
         private DataGridViewTextBoxColumn Fax;
         private DataGridViewTextBoxColumn HomePage;
-        private DataGridViewButtonColumn Edit;
+        private DataGridViewButtonColumn Update;
         private DataGridViewButtonColumn Delete;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
