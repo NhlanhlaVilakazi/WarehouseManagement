@@ -29,8 +29,8 @@ namespace WarehouseManagent.Forms.Products
                 DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete Product?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
-                    bool success = productBusiness.RemoveProduct(categoryId);
+                    int productId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
+                    bool success = productBusiness.RemoveProduct(productId);
                     feedBack.ShowFeedbackAlert(success, "Product", "deleted");
                     productGridView.Refresh();
                 }

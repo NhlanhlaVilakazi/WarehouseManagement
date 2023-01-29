@@ -34,7 +34,7 @@ namespace WarehouseManagent.Forms.Categories
                     int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
                     bool success = categoryBusiness.RemoveCategory(categoryId);
                     feedBack.ShowFeedbackAlert(success, "Category", "deleted");
-                    categoryGridView.Refresh();
+                    //categoryGridView.Refresh();
                 }  
             }
         }

@@ -6,5 +6,6 @@ namespace WarehouseManagent.Repository.Interfaces
     {
         List<Supplier> GetAll();
         int AddSupplier(Supplier supplier);
+        int DeleteSupplier(int supplierID);
     }
 }

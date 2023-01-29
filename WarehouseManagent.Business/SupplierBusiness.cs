@@ -25,5 +25,10 @@ namespace WarehouseManagent.Business
             var supplierModel = ObjectMapper.Mapper.Map<Supplier>(supplier);
             return _supplierRepository.AddSupplier(supplierModel) > 0;
         }
+
+        public bool RemoveSupplier(int supplierID)
+        {
+            return _supplierRepository.DeleteSupplier(supplierID) > 0;
+        }
     }
 }

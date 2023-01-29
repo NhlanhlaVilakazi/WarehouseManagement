@@ -24,7 +24,8 @@ namespace WarehouseManagent.Repository.Implementation
 
         public int AddSupplier(Supplier supplier)
         {
-            SqlParameter[] parameters = {
+            SqlParameter[] parameters = 
+            {
                 new SqlParameter("@companyName", supplier.ContactName),
                 new SqlParameter("@contactName", supplier.ContactName),
                 new SqlParameter("@contactTitle", supplier.ContactTitle),
@@ -42,6 +43,16 @@ namespace WarehouseManagent.Repository.Implementation
             _dbContext.Database.ExecuteSqlRawAsync("NewSupplier  @companyName, @contactName, @contactTitle, @address, " +
             "@city, region, @postalCode, @country, @phone, @fax, @homePage, @supplierID OUT", parameters).GetAwaiter().GetResult();
             return (int)(parameters[11].Value ?? 0);
+        }
+
+        public int DeleteSupplier(int supplierID)
+        {
+            SqlParameter[] parameter =
+            {
+                new SqlParameter("@supplierID", supplierID)
+            };
+
+            return _dbContext.Database.ExecuteSqlRawAsync("DeleteSupplier @supplierID", parameter).GetAwaiter().GetResult();
         }
     }
 }
