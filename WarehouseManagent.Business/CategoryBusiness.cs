@@ -31,5 +31,17 @@ namespace WarehouseManagent.Business
         {
             return _categoryRepository.DeteleCategory(categoryID) > 0;
         }
+
+        public CategoryViewModel GetById(int categoryID)
+        {
+            var category = _categoryRepository.GetCategoryById(categoryID);
+            return ObjectMapper.Mapper.Map<CategoryViewModel>(category);
+        }
+
+        public bool UpdateCategory(CategoryViewModel category)
+        {
+            var categoryModel = ObjectMapper.Mapper.Map<Category>(category);
+            return _categoryRepository.UpdateCategory(categoryModel) > 0;
+        }
     }
 }

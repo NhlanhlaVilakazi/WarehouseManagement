@@ -107,6 +107,7 @@
             this.categoryPictureBx.Location = new System.Drawing.Point(534, 122);
             this.categoryPictureBx.Name = "categoryPictureBx";
             this.categoryPictureBx.Size = new System.Drawing.Size(201, 207);
+            this.categoryPictureBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.categoryPictureBx.TabIndex = 86;
             this.categoryPictureBx.TabStop = false;
             // 

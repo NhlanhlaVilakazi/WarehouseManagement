@@ -1,9 +1,11 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Reflection.Metadata;
 using WarehouseManagent.Data;
 using WarehouseManagent.Data.DataModels;
 using WarehouseManagent.Repository.Interfaces;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WarehouseManagent.Repository.Implementation
 {
@@ -41,8 +43,29 @@ namespace WarehouseManagent.Repository.Implementation
             {
                 new SqlParameter("@categoryID", categoryID)
             };
-
             return _dbContext.Database.ExecuteSqlRawAsync("DeleteCategory @categoryID", parameter).GetAwaiter().GetResult();
+        }
+
+        public Category? GetCategoryById(int categoryID)
+        {
+            SqlParameter[] parameter =
+            {
+                new SqlParameter("@categoryID", categoryID)
+            };
+            const string query = "EXEC [GetCategoryById] @categoryID";
+            return _dbContext.Set<Category>().FromSqlRaw(query, parameter).ToList().SingleOrDefault();
+        }
+
+        public int UpdateCategory(Category category)
+        {
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@categoryName", category.CategoryName),
+                new SqlParameter("@description", category.Description),
+                new SqlParameter("@picture", category.Picture),
+                new SqlParameter("@categoryID", category.CategoryID)
+            };
+            return _dbContext.Database.ExecuteSqlRawAsync("UpdateCategory @categoryName, @description, @picture, @categoryID", parameters).GetAwaiter().GetResult();
         }
     }
 }

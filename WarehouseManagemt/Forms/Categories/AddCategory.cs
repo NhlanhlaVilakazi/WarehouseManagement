@@ -8,27 +8,25 @@ namespace WarehouseManagent.Forms.Categories
     public partial class AddCategoryForm : Form
     {
         private DropdownHelper dropdown;
+        private ImageHelper imageHelper;
         private CategoryBusiness categoryBusiness;
         private UserFeedBack feedBack;
-        private Bitmap? imageBit;
+        private Bitmap? bitMap;
+
+
         public AddCategoryForm()
         {
             InitializeComponent();
             dropdown = new();
             feedBack = new();
+            imageHelper = new();
             categoryBusiness = new();
             dropdown.PopulateCategoryDropDown(categoryComboBx);
         }
 
         private void imageBrowseBtn_Click(object sender, EventArgs e)
         {
-            OpenFileDialog imageDialog = new();
-            if(imageDialog.ShowDialog() == DialogResult.OK)
-            {
-                imageBit = new Bitmap(imageDialog.FileName);
-                categoryPictureBx.Image= imageBit;
-                categoryPictureBx.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx);
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -53,7 +51,7 @@ namespace WarehouseManagent.Forms.Categories
             {
                 CategoryName = categoryComboBx.Text,
                 Description = descriptionRichTxt.Text,
-                Picture = new PictureConvertor().ImageToByte(imageBit)
+                Picture = new ImageHelper().ImageToByte(bitMap)
             };
         }
     }

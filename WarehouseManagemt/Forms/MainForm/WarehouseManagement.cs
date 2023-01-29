@@ -7,10 +7,12 @@ namespace WarehouseManagent
     public partial class WarehouseManagement : Form
     {
         private Form? activeForm;
+        public Panel? mailPanel;
         public WarehouseManagement()
         {
             InitializeComponent();
             CustomizeDesign();
+            mailPanel = childFormPanel;
         }
 
         public void CustomizeDesign()
