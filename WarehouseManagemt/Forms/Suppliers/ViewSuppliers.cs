@@ -21,12 +21,12 @@ namespace WarehouseManagent.Forms.Supplier
 
         private void ViewSuppliersForm_Load(object sender, EventArgs e)
         {
-            supplierGridView.DataSource = LoadListOfSuppliers();
+            supplierGridView.DataSource = LoadSupplierList();
         }
 
         private void supplierGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (supplierGridView.Columns[e.ColumnIndex].HeaderText.Equals(ActionEnum.Delete.ToString()))
+            if (gridViewHelper.GetColumn(e, supplierGridView).Equals(ActionEnum.Delete.ToString()))
             {
                 string? supplier = gridViewHelper.GetCellValue(e, supplierGridView, "CompanyName").ToString();
                 DialogResult dialogResult = MessageBox.Show($"This action will delete all products that are supplied by {supplier} ." +
@@ -37,12 +37,12 @@ namespace WarehouseManagent.Forms.Supplier
                     bool success = supplierBusiness.RemoveSupplier(supplierId);
                     var results = feedBack.ShowFeedbackAlert(success, "Supplier", "deleted");
                     if(results == DialogResult.OK) 
-                        supplierGridView.DataSource = LoadListOfSuppliers();
+                        supplierGridView.DataSource = LoadSupplierList();
                 }
             }
         }
 
-        public List<SupplierViewModel> LoadListOfSuppliers()
+        private List<SupplierViewModel> LoadSupplierList()
         {
             return supplierBusiness.GetSuppiers();
         }

@@ -1,4 +1,5 @@
-﻿using WarehouseManagent.Business;
+﻿using WarehouseManagement.ViewModels;
+using WarehouseManagent.Business;
 using WarehouseManagent.Helpers;
 
 namespace WarehouseManagent.Forms.Categories
@@ -18,8 +19,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void ViewCategoryForm_Load(object sender, EventArgs e)
         {
-            var categories = categoryBusiness.GetCategories();
-            categoryGridView.DataSource = categories;
+            categoryGridView.DataSource = LoadCategoryList();
         }
 
         private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -33,8 +33,9 @@ namespace WarehouseManagent.Forms.Categories
                 {
                     int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
                     bool success = categoryBusiness.RemoveCategory(categoryId);
-                    feedBack.ShowFeedbackAlert(success, "Category", "deleted");
-                    //categoryGridView.Refresh();
+                    var results = feedBack.ShowFeedbackAlert(success, "Category", "deleted");
+                    if (results == DialogResult.OK)
+                        categoryGridView.DataSource = LoadCategoryList();
                 }  
             }
         }
@@ -43,6 +44,11 @@ namespace WarehouseManagent.Forms.Categories
         {
             var categories = categoryBusiness.GetCategories();
             categoryGridView.DataSource = categories;
+        }
+
+        private List<CategoryViewModel> LoadCategoryList()
+        {
+            return categoryBusiness.GetCategories();
         }
     }
 }

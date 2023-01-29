@@ -1,5 +1,6 @@
 ﻿using WarehouseManagent.Business;
 using WarehouseManagent.Helpers;
+using WarehouseManagent.ViewModels;
 
 namespace WarehouseManagent.Forms.Products
 {
@@ -18,8 +19,7 @@ namespace WarehouseManagent.Forms.Products
 
         private void ViewProductsForm_Load(object sender, EventArgs e)
         {
-            var products = productBusiness.GetProducts();
-            productGridView.DataSource = products;
+            productGridView.DataSource = LoadProductList();
         }
 
         private void productGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -31,10 +31,16 @@ namespace WarehouseManagent.Forms.Products
                 {
                     int productId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
                     bool success = productBusiness.RemoveProduct(productId);
-                    feedBack.ShowFeedbackAlert(success, "Product", "deleted");
-                    productGridView.Refresh();
+                    var results = feedBack.ShowFeedbackAlert(success, "Product", "deleted");
+                    if (results == DialogResult.OK)
+                        productGridView.DataSource = LoadProductList();
                 }
             }
+        }
+
+        private List<ProductViewModel> LoadProductList()
+        {
+            return productBusiness.GetProducts();
         }
     }
 }
