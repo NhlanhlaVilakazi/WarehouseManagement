@@ -57,6 +57,7 @@
             // 
             // backBtn
             // 
+            this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backBtn.Location = new System.Drawing.Point(249, 434);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 23);
@@ -66,6 +67,7 @@
             // 
             // clearBtn
             // 
+            this.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearBtn.Location = new System.Drawing.Point(435, 434);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(75, 23);
@@ -75,6 +77,7 @@
             // 
             // saveBtn
             // 
+            this.saveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveBtn.Location = new System.Drawing.Point(614, 434);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);

@@ -76,6 +76,7 @@
             this.Delete,
             this.CategoryID,
             this.SupplierID});
+            this.productGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.productGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productGridView.Location = new System.Drawing.Point(0, 0);
             this.productGridView.Name = "productGridView";

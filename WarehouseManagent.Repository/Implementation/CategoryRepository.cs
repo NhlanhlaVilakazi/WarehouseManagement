@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 using WarehouseManagent.Data;
 using WarehouseManagent.Data.DataModels;
 using WarehouseManagent.Repository.Interfaces;
@@ -27,12 +26,10 @@ namespace WarehouseManagent.Repository.Implementation
             {
                 new SqlParameter("@categoryName", category.CategoryName),
                 new SqlParameter("@description", category.Description),
-                new SqlParameter("@picture", category.Picture),
-                new SqlParameter("@categoryID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
+                new SqlParameter("@picture", category.Picture)
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("[NewCategory]  @categoryName, @description, @picture, @categoryID OUT", parameters).GetAwaiter().GetResult();
-            return (int)(parameters[3].Value ?? 0);
+            return _dbContext.Database.ExecuteSqlRawAsync("[NewCategory]  @categoryName, @description, @picture", parameters).GetAwaiter().GetResult();
         }
 
         public int DeteleCategory(int categoryID)

@@ -36,13 +36,11 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@country", supplier.Country),
                 new SqlParameter("@phone", supplier.Phone),
                 new SqlParameter("@fax", supplier.Fax),
-                new SqlParameter("@homePage", supplier.HomePage),
-                new SqlParameter("@supplierID",0){  Direction = ParameterDirection.Output, SqlDbType = SqlDbType.Int, Size = 400 }
+                new SqlParameter("@homePage", supplier.HomePage)
             };
 
-            _dbContext.Database.ExecuteSqlRawAsync("[NewSupplier]  @companyName, @contactName, @contactTitle, @address, " +
-            "@city, region, @postalCode, @country, @phone, @fax, @homePage, @supplierID OUT", parameters).GetAwaiter().GetResult();
-            return (int)(parameters[11].Value ?? 0);
+           return _dbContext.Database.ExecuteSqlRawAsync("[NewSupplier]  @companyName, @contactName, @contactTitle, @address, " +
+           "@city, region, @postalCode, @country, @phone, @fax, @homePage", parameters).GetAwaiter().GetResult();
         }
 
         public int DeleteSupplier(int supplierID)

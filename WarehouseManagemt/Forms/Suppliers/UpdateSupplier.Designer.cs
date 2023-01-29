@@ -165,6 +165,7 @@
             // 
             // supplierUpdateBtn
             // 
+            this.supplierUpdateBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.supplierUpdateBtn.Location = new System.Drawing.Point(527, 419);
             this.supplierUpdateBtn.Name = "supplierUpdateBtn";
             this.supplierUpdateBtn.Size = new System.Drawing.Size(93, 23);

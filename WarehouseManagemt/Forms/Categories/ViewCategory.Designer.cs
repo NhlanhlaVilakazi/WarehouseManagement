@@ -60,6 +60,7 @@
             this.Picture,
             this.updateBtn,
             this.deleteBtn});
+            this.categoryGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.categoryGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categoryGridView.Location = new System.Drawing.Point(0, 0);
             this.categoryGridView.Name = "categoryGridView";
