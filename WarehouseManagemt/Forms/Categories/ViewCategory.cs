@@ -1,6 +1,5 @@
 ﻿using WarehouseManagement.ViewModels;
 using WarehouseManagent.Business;
-using WarehouseManagent.Forms.Supplier;
 using WarehouseManagent.Helpers;
 
 namespace WarehouseManagent.Forms.Categories

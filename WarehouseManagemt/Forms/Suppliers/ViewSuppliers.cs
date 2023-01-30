@@ -1,6 +1,4 @@
-﻿using System.Data;
-using WarehouseManagent.Business;
-using WarehouseManagent.Forms.Categories;
+﻿using WarehouseManagent.Business;
 using WarehouseManagent.Forms.Suppliers;
 using WarehouseManagent.Helpers;
 using WarehouseManagent.ViewModels;
