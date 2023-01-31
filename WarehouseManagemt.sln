@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagent.Business"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagent.Repository", "WarehouseManagent.Repository\WarehouseManagent.Repository.csproj", "{994F289F-16D0-4464-B34A-2BFE7B142F0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagent.ViewModels", "WarehouseManagement.ViewModels\WarehouseManagent.ViewModels.csproj", "{6025717D-A557-40C7-9479-623FE30D0A92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagent.ViewModels", "WarehouseManagement.ViewModels\WarehouseManagent.ViewModels.csproj", "{6025717D-A557-40C7-9479-623FE30D0A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagent.Tests", "WarehouseManagent.Tests\WarehouseManagent.Tests.csproj", "{7BE86492-5BA2-4188-9F5B-1C43A85B8631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6025717D-A557-40C7-9479-623FE30D0A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6025717D-A557-40C7-9479-623FE30D0A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6025717D-A557-40C7-9479-623FE30D0A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE86492-5BA2-4188-9F5B-1C43A85B8631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE86492-5BA2-4188-9F5B-1C43A85B8631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE86492-5BA2-4188-9F5B-1C43A85B8631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE86492-5BA2-4188-9F5B-1C43A85B8631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

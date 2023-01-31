@@ -30,14 +30,15 @@
         {
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.backBtn = new System.Windows.Forms.Button();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.categoryPictureBx = new System.Windows.Forms.PictureBox();
             this.descriptionRichTxt = new System.Windows.Forms.RichTextBox();
-            this.categoryComboBx = new System.Windows.Forms.ComboBox();
             this.imageBrowseBtn = new System.Windows.Forms.Button();
+            this.categoryNameErrorMsg = new System.Windows.Forms.Label();
+            this.pictureErrorMsg = new System.Windows.Forms.Label();
+            this.descriptionErrorMsg = new System.Windows.Forms.Label();
+            this.categoryNameTxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPictureBx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(170, 158);
+            this.label10.Location = new System.Drawing.Point(170, 172);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 15);
             this.label10.TabIndex = 85;
@@ -60,26 +61,6 @@
             this.label6.Size = new System.Drawing.Size(90, 15);
             this.label6.TabIndex = 82;
             this.label6.Text = "CategoryName";
-            // 
-            // backBtn
-            // 
-            this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backBtn.Location = new System.Drawing.Point(171, 395);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 76;
-            this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearBtn.Location = new System.Drawing.Point(428, 395);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(75, 23);
-            this.clearBtn.TabIndex = 75;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = true;
             // 
             // saveBtn
             // 
@@ -113,24 +94,16 @@
             // 
             // descriptionRichTxt
             // 
-            this.descriptionRichTxt.Location = new System.Drawing.Point(171, 176);
+            this.descriptionRichTxt.Location = new System.Drawing.Point(171, 190);
             this.descriptionRichTxt.Name = "descriptionRichTxt";
             this.descriptionRichTxt.Size = new System.Drawing.Size(291, 113);
             this.descriptionRichTxt.TabIndex = 87;
             this.descriptionRichTxt.Text = "";
             // 
-            // categoryComboBx
-            // 
-            this.categoryComboBx.FormattingEnabled = true;
-            this.categoryComboBx.Location = new System.Drawing.Point(171, 122);
-            this.categoryComboBx.Name = "categoryComboBx";
-            this.categoryComboBx.Size = new System.Drawing.Size(291, 23);
-            this.categoryComboBx.TabIndex = 88;
-            // 
             // imageBrowseBtn
             // 
             this.imageBrowseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imageBrowseBtn.Location = new System.Drawing.Point(171, 306);
+            this.imageBrowseBtn.Location = new System.Drawing.Point(170, 329);
             this.imageBrowseBtn.Name = "imageBrowseBtn";
             this.imageBrowseBtn.Size = new System.Drawing.Size(291, 23);
             this.imageBrowseBtn.TabIndex = 89;
@@ -138,20 +111,64 @@
             this.imageBrowseBtn.UseVisualStyleBackColor = true;
             this.imageBrowseBtn.Click += new System.EventHandler(this.imageBrowseBtn_Click);
             // 
+            // categoryNameErrorMsg
+            // 
+            this.categoryNameErrorMsg.AutoSize = true;
+            this.categoryNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.categoryNameErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.categoryNameErrorMsg.Location = new System.Drawing.Point(171, 146);
+            this.categoryNameErrorMsg.Name = "categoryNameErrorMsg";
+            this.categoryNameErrorMsg.Size = new System.Drawing.Size(160, 15);
+            this.categoryNameErrorMsg.TabIndex = 90;
+            this.categoryNameErrorMsg.Text = "Please input category name";
+            this.categoryNameErrorMsg.Visible = false;
+            // 
+            // pictureErrorMsg
+            // 
+            this.pictureErrorMsg.AutoSize = true;
+            this.pictureErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pictureErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.pictureErrorMsg.Location = new System.Drawing.Point(534, 332);
+            this.pictureErrorMsg.Name = "pictureErrorMsg";
+            this.pictureErrorMsg.Size = new System.Drawing.Size(173, 15);
+            this.pictureErrorMsg.TabIndex = 91;
+            this.pictureErrorMsg.Text = "Please select category picture";
+            this.pictureErrorMsg.Visible = false;
+            // 
+            // descriptionErrorMsg
+            // 
+            this.descriptionErrorMsg.AutoSize = true;
+            this.descriptionErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.descriptionErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.descriptionErrorMsg.Location = new System.Drawing.Point(170, 306);
+            this.descriptionErrorMsg.Name = "descriptionErrorMsg";
+            this.descriptionErrorMsg.Size = new System.Drawing.Size(139, 15);
+            this.descriptionErrorMsg.TabIndex = 92;
+            this.descriptionErrorMsg.Text = "Please input description";
+            this.descriptionErrorMsg.Visible = false;
+            // 
+            // categoryNameTxt
+            // 
+            this.categoryNameTxt.Location = new System.Drawing.Point(171, 122);
+            this.categoryNameTxt.Name = "categoryNameTxt";
+            this.categoryNameTxt.Size = new System.Drawing.Size(290, 23);
+            this.categoryNameTxt.TabIndex = 93;
+            // 
             // AddCategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 466);
+            this.Controls.Add(this.categoryNameTxt);
+            this.Controls.Add(this.descriptionErrorMsg);
+            this.Controls.Add(this.pictureErrorMsg);
+            this.Controls.Add(this.categoryNameErrorMsg);
             this.Controls.Add(this.imageBrowseBtn);
-            this.Controls.Add(this.categoryComboBx);
             this.Controls.Add(this.descriptionRichTxt);
             this.Controls.Add(this.categoryPictureBx);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.saveBtn);
             this.Name = "AddCategoryForm";
             this.Text = "Add Category";
@@ -165,13 +182,14 @@
 
         private Label label10;
         private Label label6;
-        private Button backBtn;
-        private Button clearBtn;
         private Button saveBtn;
         private Label label5;
         private PictureBox categoryPictureBx;
         private RichTextBox descriptionRichTxt;
-        private ComboBox categoryComboBx;
         private Button imageBrowseBtn;
+        private Label categoryNameErrorMsg;
+        private Label pictureErrorMsg;
+        private Label descriptionErrorMsg;
+        private TextBox categoryNameTxt;
     }
 }
