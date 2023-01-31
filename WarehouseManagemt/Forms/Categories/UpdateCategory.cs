@@ -21,7 +21,7 @@ namespace WarehouseManagent.Forms.Categories
             dropdown = new();
             feedBack = new();
 
-            dropdown.PopulateCategoryDropDown(categoryComboBx);
+            DropdownHelper.PopulateCategoryDropDown(categoryComboBx);
         }
 
         private void UpdateCategory_Load(object sender, EventArgs e)

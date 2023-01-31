@@ -7,14 +7,10 @@ namespace WarehouseManagent.Forms.Products
     public partial class ViewProductsForm : Form
     {
         private ProductBusiness productBusiness;
-        private GridViewHelper gridViewHelper;
-        private UserFeedBack feedBack;
         public ViewProductsForm()
         {
             InitializeComponent();
             productBusiness = new();
-            gridViewHelper = new();
-            feedBack = new();
         }
 
         private void ViewProductsForm_Load(object sender, EventArgs e)
@@ -24,9 +20,9 @@ namespace WarehouseManagent.Forms.Products
 
         private void productGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (gridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Delete.ToString()))
+            if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Delete.ToString()))
                 DeleteteProduct(e);
-            else if (gridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Update.ToString()))
+            else if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Update.ToString()))
                 UpdateProduct(e);
         }
 
@@ -40,7 +36,7 @@ namespace WarehouseManagent.Forms.Products
             DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete Product?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
-                int productId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
+                int productId = Convert.ToInt32(GridViewHelper.GetCellValue(e, productGridView, "ProductID"));
                 bool success = productBusiness.RemoveProduct(productId);
                 var results = UserFeedBack.ShowFeedbackAlert(success, "Product", "deleted");
                 if (results == DialogResult.OK)
@@ -50,7 +46,7 @@ namespace WarehouseManagent.Forms.Products
 
         private void UpdateProduct(DataGridViewCellEventArgs e)
         {
-            int productId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
+            int productId = Convert.ToInt32(GridViewHelper.GetCellValue(e, productGridView, "ProductID"));
             new UpdateProduct(productId).Show();
         }
     }

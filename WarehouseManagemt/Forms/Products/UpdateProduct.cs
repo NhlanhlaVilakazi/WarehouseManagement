@@ -6,20 +6,16 @@ namespace WarehouseManagent.Forms.Products
 {
     public partial class UpdateProduct : Form
     {
-        private int productId;
+        private readonly int productId;
         private ProductBusiness productBusiness;
-        private DropdownHelper dropdowns;
-        private UserFeedBack feedBack;
         public UpdateProduct(int productID)
         {
             InitializeComponent();
             productId = productID;
             productBusiness = new();
-            dropdowns = new();
-            feedBack = new();
 
-            dropdowns.PopulateSupplierDropDown(supplierComboBx);
-            dropdowns.PopulateCategoryDropDown(categoryComboBx);
+            DropdownHelper.PopulateSupplierDropDown(supplierComboBx);
+            DropdownHelper.PopulateCategoryDropDown(categoryComboBx);
         }
 
         private void updateproductBtn_Click(object sender, EventArgs e)

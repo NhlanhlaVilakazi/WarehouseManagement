@@ -7,17 +7,13 @@ namespace WarehouseManagent.Forms.Products
     public partial class AddProductForm : Form
     {
         private ProductBusiness productBusiness;
-        private DropdownHelper dropdowns;
-        private UserFeedBack feedBack;
         public AddProductForm()
         {
             InitializeComponent();
             productBusiness = new();
-            dropdowns = new();
-            feedBack = new();
 
-            dropdowns.PopulateSupplierDropDown(supplierComboBx);
-            dropdowns.PopulateCategoryDropDown(categoryComboBx);
+            DropdownHelper.PopulateSupplierDropDown(supplierComboBx);
+            DropdownHelper.PopulateCategoryDropDown(categoryComboBx);
         }
 
         private void saveBtn_Click(object sender, EventArgs e)

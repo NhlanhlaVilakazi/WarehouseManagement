@@ -6,15 +6,13 @@ namespace WarehouseManagent.Forms.Suppliers
 {
     public partial class UpdateSupplier : Form
     {
-        private int supplierId;
+        private readonly int supplierId;
         private SupplierBusiness supplierBusiness;
-        private UserFeedBack feedBack;
         public UpdateSupplier(int supplierID)
         {
             InitializeComponent();
             supplierBusiness = new();
             supplierId = supplierID;
-            feedBack = new();
         }
 
         private void UpdateSupplier_Load(object sender, EventArgs e)

@@ -8,15 +8,11 @@ namespace WarehouseManagent.Forms.Categories
     {
         private ImageHelper imageHelper;
         private CategoryBusiness categoryBusiness;
-        private UserFeedBack feedBack;
         private Bitmap? bitMap;
-
-        public event EventHandler AddBtn;
 
         public AddCategoryForm()
         {
             InitializeComponent();
-            feedBack = new();
             imageHelper = new();
             categoryBusiness = new();
         }

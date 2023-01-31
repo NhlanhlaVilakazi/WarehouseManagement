@@ -24,9 +24,9 @@ namespace WarehouseManagent.Forms.Categories
 
         private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (gridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Delete.ToString()))
+            if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Delete.ToString()))
                 DeleteCategory(e);
-            else if (gridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Update.ToString()))
+            else if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Update.ToString()))
                 UpdateCategory(e);
         }
 
@@ -38,7 +38,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void DeleteCategory(DataGridViewCellEventArgs e)
         {
-            int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
+            int categoryId = Convert.ToInt32(GridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
             bool success = categoryBusiness.RemoveCategory(categoryId);
             var results = UserFeedBack.ShowFeedbackAlert(success, "Category", "deleted");
             if (results == DialogResult.OK)
@@ -47,7 +47,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void UpdateCategory(DataGridViewCellEventArgs e)
         {
-            int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
+            int categoryId = Convert.ToInt32(GridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
             new UpdateCategory(categoryId).Show();
         }
 

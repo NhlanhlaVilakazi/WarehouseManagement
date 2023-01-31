@@ -4,7 +4,7 @@ namespace WarehouseManagent.Helpers
 {
     public class DropdownHelper
     {
-        public void PopulateSupplierDropDown(ComboBox comboBox)
+        public static void PopulateSupplierDropDown(ComboBox comboBox)
         {  
             var suppliers = new SupplierBusiness().GetSuppiers();
             comboBox.DataSource = suppliers;
@@ -12,7 +12,7 @@ namespace WarehouseManagent.Helpers
             comboBox.ValueMember = "SupplierID";
         }
 
-        public void PopulateCategoryDropDown(ComboBox comboBox)
+        public static void PopulateCategoryDropDown(ComboBox comboBox)
         {
             var categories = new CategoryBusiness().GetCategories();
             comboBox.DataSource = categories;
