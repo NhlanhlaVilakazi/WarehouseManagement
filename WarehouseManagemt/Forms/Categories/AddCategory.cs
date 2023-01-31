@@ -1,9 +1,6 @@
 ﻿using WarehouseManagement.ViewModels;
 using WarehouseManagent.Business;
-using WarehouseManagent.Business.TestBusinessClasses;
 using WarehouseManagent.Helpers;
-using WarehouseManagent.ViewModels;
-using WarehouseManagent.ViewModels.Interfaces;
 
 namespace WarehouseManagent.Forms.Categories
 {
@@ -38,6 +35,17 @@ namespace WarehouseManagent.Forms.Categories
             }
         }
 
+        public CategoryViewModel GetCategoryModel()
+        {
+            return new CategoryViewModel
+            {
+                CategoryName = categoryNameTxt.Text,
+                Description = descriptionRichTxt.Text,
+                Picture = new ImageHelper().ImageToByte(bitMap)
+            };
+        }
+
+        #region Validations
         public bool ValidateInput()
         {
             bool hasError = false;
@@ -49,15 +57,15 @@ namespace WarehouseManagent.Forms.Categories
             else
                 categoryNameErrorMsg.Visible = false;
 
-            if(string.IsNullOrEmpty(descriptionRichTxt.Text))
+            if (string.IsNullOrEmpty(descriptionRichTxt.Text))
             {
                 descriptionErrorMsg.Visible = true;
                 hasError = true;
             }
             else
                 descriptionErrorMsg.Visible = false;
-            
-            if(categoryPictureBx.Image is null)
+
+            if (categoryPictureBx.Image is null)
             {
                 pictureErrorMsg.Visible = true;
                 hasError = true;
@@ -68,14 +76,20 @@ namespace WarehouseManagent.Forms.Categories
             return hasError;
         }
 
-        public CategoryViewModel GetCategoryModel()
+        private void categoryNameTxt_TextChanged(object sender, EventArgs e)
         {
-            return new CategoryViewModel
-            {
-                CategoryName = categoryNameTxt.Text,
-                Description = descriptionRichTxt.Text,
-                Picture = new ImageHelper().ImageToByte(bitMap)
-            };
+            ValidateInput();
         }
+
+        private void descriptionRichTxt_TextChanged(object sender, EventArgs e)
+        {
+            ValidateInput();
+        }
+
+        private void categoryPictureBx_BackColorChanged(object sender, EventArgs e)
+        {
+            ValidateInput();
+        }
+        #endregion
     }
 }

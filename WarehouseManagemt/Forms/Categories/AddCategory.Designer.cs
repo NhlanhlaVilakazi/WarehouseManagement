@@ -99,6 +99,7 @@
             this.descriptionRichTxt.Size = new System.Drawing.Size(291, 113);
             this.descriptionRichTxt.TabIndex = 87;
             this.descriptionRichTxt.Text = "";
+            this.descriptionRichTxt.TextChanged += new System.EventHandler(this.descriptionRichTxt_TextChanged);
             // 
             // imageBrowseBtn
             // 
@@ -153,6 +154,7 @@
             this.categoryNameTxt.Name = "categoryNameTxt";
             this.categoryNameTxt.Size = new System.Drawing.Size(290, 23);
             this.categoryNameTxt.TabIndex = 93;
+            this.categoryNameTxt.TextChanged += new System.EventHandler(this.categoryNameTxt_TextChanged);
             // 
             // AddCategoryForm
             // 
