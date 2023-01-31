@@ -31,7 +31,7 @@ namespace WarehouseManagent.Forms.Categories
             if (ValidInput())
             {
                 bool success = categoryBusiness.AddNewCategory(GetCategoryModel());
-                feedBack.ShowFeedbackAlert(success, "Category", "added");
+                UserFeedBack.ShowFeedbackAlert(success, "Category", "added");
             }
         }
 

@@ -30,7 +30,7 @@ namespace WarehouseManagent.Forms.Products
                 return;
             }
             bool success = productBusiness.UpdateProduct(GetProductModel());
-            var results = feedBack.ShowFeedbackAlert(success, "Product", "updated");
+            var results = UserFeedBack.ShowFeedbackAlert(success, "Product", "updated");
             if (results == DialogResult.OK)
                 this.Close();
         }

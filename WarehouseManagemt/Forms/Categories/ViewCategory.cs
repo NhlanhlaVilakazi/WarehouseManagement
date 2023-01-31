@@ -40,7 +40,7 @@ namespace WarehouseManagent.Forms.Categories
         {
             int categoryId = Convert.ToInt32(gridViewHelper.GetCellValue(e, categoryGridView, "CategoryID"));
             bool success = categoryBusiness.RemoveCategory(categoryId);
-            var results = feedBack.ShowFeedbackAlert(success, "Category", "deleted");
+            var results = UserFeedBack.ShowFeedbackAlert(success, "Category", "deleted");
             if (results == DialogResult.OK)
                 categoryGridView.DataSource = LoadCategoryList();
         }

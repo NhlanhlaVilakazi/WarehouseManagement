@@ -41,7 +41,7 @@ namespace WarehouseManagent.Forms.Suppliers
                 return;
             }
             bool success = supplierBusiness.UpdateSupplier(GetSupplierModel());
-            var results = feedBack.ShowFeedbackAlert(success, "Supplier", "updated");
+            var results = UserFeedBack.ShowFeedbackAlert(success, "Supplier", "updated");
             if (results == DialogResult.OK)
                 this.Close();
         }

@@ -42,7 +42,7 @@ namespace WarehouseManagent.Forms.Products
             {
                 int productId = Convert.ToInt32(gridViewHelper.GetCellValue(e, productGridView, "ProductID"));
                 bool success = productBusiness.RemoveProduct(productId);
-                var results = feedBack.ShowFeedbackAlert(success, "Product", "deleted");
+                var results = UserFeedBack.ShowFeedbackAlert(success, "Product", "deleted");
                 if (results == DialogResult.OK)
                     productGridView.DataSource = LoadProductList();
             }

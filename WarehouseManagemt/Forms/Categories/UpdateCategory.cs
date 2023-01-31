@@ -46,7 +46,7 @@ namespace WarehouseManagent.Forms.Categories
                 return;
             }
             bool success = categoryBusiness.UpdateCategory(GetCategoryModel());
-            var results = feedBack.ShowFeedbackAlert(success, "Category", "updated");
+            var results = UserFeedBack.ShowFeedbackAlert(success, "Category", "updated");
             if (results == DialogResult.OK)
                 this.Close();
         }

@@ -31,12 +31,12 @@ namespace WarehouseManagent.Repository.Implementation
                 new SqlParameter("@contactTitle", supplier.ContactTitle),
                 new SqlParameter("@address", supplier.Address),
                 new SqlParameter("@city", supplier.City),
-                new SqlParameter("@region", supplier.Region),
+                new SqlParameter("@region", supplier.Region ??(object) DBNull.Value),
                 new SqlParameter("@postalCode", supplier.PostalCode),
                 new SqlParameter("@country", supplier.Country),
                 new SqlParameter("@phone", supplier.Phone),
-                new SqlParameter("@fax", supplier.Fax),
-                new SqlParameter("@homePage", supplier.HomePage)
+                new SqlParameter("@fax", supplier.Fax ?? (object)DBNull.Value),
+                new SqlParameter("@homePage", supplier.HomePage ?? (object)DBNull.Value)
             };
 
            return _dbContext.Database.ExecuteSqlRawAsync("[NewSupplier]  @companyName, @contactName, @contactTitle, @address, " +

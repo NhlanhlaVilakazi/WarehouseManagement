@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backBtn = new System.Windows.Forms.Button();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.saveBtn = new System.Windows.Forms.Button();
             this.addressRichTxt = new System.Windows.Forms.RichTextBox();
             this.companyNameTxt = new System.Windows.Forms.TextBox();
@@ -53,32 +51,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.contactTitleErrorMsg = new System.Windows.Forms.Label();
+            this.companyNameErrorMsg = new System.Windows.Forms.Label();
+            this.contactNameErrorMsg = new System.Windows.Forms.Label();
+            this.cityErrorMsg = new System.Windows.Forms.Label();
+            this.postalCodeErrorMsg = new System.Windows.Forms.Label();
+            this.phoneErrorMsg = new System.Windows.Forms.Label();
+            this.countryErrorMsg = new System.Windows.Forms.Label();
+            this.addressErrorMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // backBtn
-            // 
-            this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backBtn.Location = new System.Drawing.Point(249, 434);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 29;
-            this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearBtn.Location = new System.Drawing.Point(435, 434);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(75, 23);
-            this.clearBtn.TabIndex = 28;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = true;
             // 
             // saveBtn
             // 
             this.saveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveBtn.Location = new System.Drawing.Point(614, 434);
+            this.saveBtn.Location = new System.Drawing.Point(614, 435);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);
             this.saveBtn.TabIndex = 27;
@@ -90,30 +76,33 @@
             // 
             this.addressRichTxt.Location = new System.Drawing.Point(505, 96);
             this.addressRichTxt.Name = "addressRichTxt";
-            this.addressRichTxt.Size = new System.Drawing.Size(184, 138);
+            this.addressRichTxt.Size = new System.Drawing.Size(184, 144);
             this.addressRichTxt.TabIndex = 26;
             this.addressRichTxt.Text = "";
+            this.addressRichTxt.TextChanged += new System.EventHandler(this.addressRichTxt_TextChanged);
             // 
             // companyNameTxt
             // 
-            this.companyNameTxt.Location = new System.Drawing.Point(505, 41);
+            this.companyNameTxt.Location = new System.Drawing.Point(505, 30);
             this.companyNameTxt.Name = "companyNameTxt";
             this.companyNameTxt.Size = new System.Drawing.Size(184, 23);
             this.companyNameTxt.TabIndex = 25;
+            this.companyNameTxt.TextChanged += new System.EventHandler(this.companyNameTxt_TextChanged);
             // 
             // homePageTxt
             // 
-            this.homePageTxt.Location = new System.Drawing.Point(249, 385);
+            this.homePageTxt.Location = new System.Drawing.Point(249, 398);
             this.homePageTxt.Name = "homePageTxt";
             this.homePageTxt.Size = new System.Drawing.Size(440, 23);
             this.homePageTxt.TabIndex = 24;
             // 
             // cityTxt
             // 
-            this.cityTxt.Location = new System.Drawing.Point(249, 150);
+            this.cityTxt.Location = new System.Drawing.Point(249, 156);
             this.cityTxt.Name = "cityTxt";
             this.cityTxt.Size = new System.Drawing.Size(184, 23);
             this.cityTxt.TabIndex = 23;
+            this.cityTxt.TextChanged += new System.EventHandler(this.cityTxt_TextChanged);
             // 
             // contactNameTxt
             // 
@@ -121,55 +110,60 @@
             this.contactNameTxt.Name = "contactNameTxt";
             this.contactNameTxt.Size = new System.Drawing.Size(184, 23);
             this.contactNameTxt.TabIndex = 22;
+            this.contactNameTxt.TextChanged += new System.EventHandler(this.contactNameTxt_TextChanged);
             // 
             // phoneTxt
             // 
-            this.phoneTxt.Location = new System.Drawing.Point(249, 324);
+            this.phoneTxt.Location = new System.Drawing.Point(249, 338);
             this.phoneTxt.Name = "phoneTxt";
             this.phoneTxt.Size = new System.Drawing.Size(184, 23);
             this.phoneTxt.TabIndex = 21;
+            this.phoneTxt.TextChanged += new System.EventHandler(this.phoneTxt_TextChanged);
             // 
             // countryTxt
             // 
-            this.countryTxt.Location = new System.Drawing.Point(505, 268);
+            this.countryTxt.Location = new System.Drawing.Point(505, 279);
             this.countryTxt.Name = "countryTxt";
             this.countryTxt.Size = new System.Drawing.Size(184, 23);
             this.countryTxt.TabIndex = 20;
+            this.countryTxt.TextChanged += new System.EventHandler(this.countryTxt_TextChanged);
             // 
             // faxTxt
             // 
-            this.faxTxt.Location = new System.Drawing.Point(505, 324);
+            this.faxTxt.Location = new System.Drawing.Point(505, 338);
             this.faxTxt.Name = "faxTxt";
             this.faxTxt.Size = new System.Drawing.Size(184, 23);
             this.faxTxt.TabIndex = 19;
             // 
             // postalCodeTxt
             // 
-            this.postalCodeTxt.Location = new System.Drawing.Point(249, 268);
+            this.postalCodeTxt.Location = new System.Drawing.Point(249, 279);
             this.postalCodeTxt.Name = "postalCodeTxt";
             this.postalCodeTxt.Size = new System.Drawing.Size(184, 23);
             this.postalCodeTxt.TabIndex = 18;
+            this.postalCodeTxt.TextChanged += new System.EventHandler(this.postalCodeTxt_TextChanged);
             // 
             // regionTxt
             // 
-            this.regionTxt.Location = new System.Drawing.Point(249, 211);
+            this.regionTxt.Location = new System.Drawing.Point(249, 218);
             this.regionTxt.Name = "regionTxt";
             this.regionTxt.Size = new System.Drawing.Size(184, 23);
             this.regionTxt.TabIndex = 17;
             // 
             // contactTitleTxt
             // 
-            this.contactTitleTxt.Location = new System.Drawing.Point(249, 41);
+            this.contactTitleTxt.Location = new System.Drawing.Point(249, 30);
             this.contactTitleTxt.Name = "contactTitleTxt";
             this.contactTitleTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.contactTitleTxt.Size = new System.Drawing.Size(184, 23);
             this.contactTitleTxt.TabIndex = 16;
+            this.contactTitleTxt.TextChanged += new System.EventHandler(this.contactTitleTxt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(249, 23);
+            this.label1.Location = new System.Drawing.Point(249, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 30;
@@ -179,7 +173,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(249, 193);
+            this.label2.Location = new System.Drawing.Point(249, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 15);
             this.label2.TabIndex = 31;
@@ -189,7 +183,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(505, 250);
+            this.label3.Location = new System.Drawing.Point(505, 264);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 32;
@@ -199,7 +193,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(249, 250);
+            this.label4.Location = new System.Drawing.Point(249, 261);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 15);
             this.label4.TabIndex = 33;
@@ -229,7 +223,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(505, 23);
+            this.label7.Location = new System.Drawing.Point(505, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 15);
             this.label7.TabIndex = 36;
@@ -239,7 +233,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(249, 306);
+            this.label8.Location = new System.Drawing.Point(249, 320);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 15);
             this.label8.TabIndex = 37;
@@ -249,7 +243,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(505, 306);
+            this.label9.Location = new System.Drawing.Point(505, 320);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 15);
             this.label9.TabIndex = 38;
@@ -259,7 +253,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(249, 132);
+            this.label10.Location = new System.Drawing.Point(249, 138);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(28, 15);
             this.label10.TabIndex = 39;
@@ -269,17 +263,121 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(249, 367);
+            this.label11.Location = new System.Drawing.Point(249, 380);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 15);
             this.label11.TabIndex = 40;
             this.label11.Text = "Home Page";
+            // 
+            // contactTitleErrorMsg
+            // 
+            this.contactTitleErrorMsg.AutoSize = true;
+            this.contactTitleErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.contactTitleErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.contactTitleErrorMsg.Location = new System.Drawing.Point(249, 56);
+            this.contactTitleErrorMsg.Name = "contactTitleErrorMsg";
+            this.contactTitleErrorMsg.Size = new System.Drawing.Size(113, 15);
+            this.contactTitleErrorMsg.TabIndex = 92;
+            this.contactTitleErrorMsg.Text = "Please contact title";
+            this.contactTitleErrorMsg.Visible = false;
+            // 
+            // companyNameErrorMsg
+            // 
+            this.companyNameErrorMsg.AutoSize = true;
+            this.companyNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.companyNameErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.companyNameErrorMsg.Location = new System.Drawing.Point(505, 56);
+            this.companyNameErrorMsg.Name = "companyNameErrorMsg";
+            this.companyNameErrorMsg.Size = new System.Drawing.Size(161, 15);
+            this.companyNameErrorMsg.TabIndex = 93;
+            this.companyNameErrorMsg.Text = "Please input company name";
+            this.companyNameErrorMsg.Visible = false;
+            // 
+            // contactNameErrorMsg
+            // 
+            this.contactNameErrorMsg.AutoSize = true;
+            this.contactNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.contactNameErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.contactNameErrorMsg.Location = new System.Drawing.Point(249, 122);
+            this.contactNameErrorMsg.Name = "contactNameErrorMsg";
+            this.contactNameErrorMsg.Size = new System.Drawing.Size(153, 15);
+            this.contactNameErrorMsg.TabIndex = 94;
+            this.contactNameErrorMsg.Text = "Please input contact name";
+            this.contactNameErrorMsg.Visible = false;
+            // 
+            // cityErrorMsg
+            // 
+            this.cityErrorMsg.AutoSize = true;
+            this.cityErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cityErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.cityErrorMsg.Location = new System.Drawing.Point(249, 181);
+            this.cityErrorMsg.Name = "cityErrorMsg";
+            this.cityErrorMsg.Size = new System.Drawing.Size(131, 15);
+            this.cityErrorMsg.TabIndex = 95;
+            this.cityErrorMsg.Text = "Please input city name";
+            this.cityErrorMsg.Visible = false;
+            // 
+            // postalCodeErrorMsg
+            // 
+            this.postalCodeErrorMsg.AutoSize = true;
+            this.postalCodeErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.postalCodeErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.postalCodeErrorMsg.Location = new System.Drawing.Point(249, 302);
+            this.postalCodeErrorMsg.Name = "postalCodeErrorMsg";
+            this.postalCodeErrorMsg.Size = new System.Drawing.Size(140, 15);
+            this.postalCodeErrorMsg.TabIndex = 97;
+            this.postalCodeErrorMsg.Text = "Please input postal code";
+            this.postalCodeErrorMsg.Visible = false;
+            // 
+            // phoneErrorMsg
+            // 
+            this.phoneErrorMsg.AutoSize = true;
+            this.phoneErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.phoneErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.phoneErrorMsg.Location = new System.Drawing.Point(249, 363);
+            this.phoneErrorMsg.Name = "phoneErrorMsg";
+            this.phoneErrorMsg.Size = new System.Drawing.Size(159, 15);
+            this.phoneErrorMsg.TabIndex = 98;
+            this.phoneErrorMsg.Text = "Please input phone number";
+            this.phoneErrorMsg.Visible = false;
+            // 
+            // countryErrorMsg
+            // 
+            this.countryErrorMsg.AutoSize = true;
+            this.countryErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.countryErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.countryErrorMsg.Location = new System.Drawing.Point(505, 302);
+            this.countryErrorMsg.Name = "countryErrorMsg";
+            this.countryErrorMsg.Size = new System.Drawing.Size(154, 15);
+            this.countryErrorMsg.TabIndex = 100;
+            this.countryErrorMsg.Text = "Please input country name";
+            this.countryErrorMsg.Visible = false;
+            // 
+            // addressErrorMsg
+            // 
+            this.addressErrorMsg.AutoSize = true;
+            this.addressErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.addressErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.addressErrorMsg.Location = new System.Drawing.Point(505, 243);
+            this.addressErrorMsg.Name = "addressErrorMsg";
+            this.addressErrorMsg.Size = new System.Drawing.Size(119, 15);
+            this.addressErrorMsg.TabIndex = 102;
+            this.addressErrorMsg.Text = "Please input address";
+            this.addressErrorMsg.Visible = false;
             // 
             // AddSupplierForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 466);
+            this.Controls.Add(this.addressErrorMsg);
+            this.Controls.Add(this.countryErrorMsg);
+            this.Controls.Add(this.phoneErrorMsg);
+            this.Controls.Add(this.postalCodeErrorMsg);
+            this.Controls.Add(this.cityErrorMsg);
+            this.Controls.Add(this.contactNameErrorMsg);
+            this.Controls.Add(this.companyNameErrorMsg);
+            this.Controls.Add(this.contactTitleErrorMsg);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -291,8 +389,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.addressRichTxt);
             this.Controls.Add(this.companyNameTxt);
@@ -313,9 +409,6 @@
         }
 
         #endregion
-
-        private Button backBtn;
-        private Button clearBtn;
         private Button saveBtn;
         private RichTextBox addressRichTxt;
         private TextBox companyNameTxt;
@@ -339,5 +432,13 @@
         private Label label9;
         private Label label10;
         private Label label11;
+        private Label contactTitleErrorMsg;
+        private Label companyNameErrorMsg;
+        private Label contactNameErrorMsg;
+        private Label cityErrorMsg;
+        private Label postalCodeErrorMsg;
+        private Label phoneErrorMsg;
+        private Label countryErrorMsg;
+        private Label addressErrorMsg;
     }
 }

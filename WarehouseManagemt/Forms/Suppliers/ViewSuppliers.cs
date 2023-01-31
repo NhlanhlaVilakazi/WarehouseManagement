@@ -46,7 +46,7 @@ namespace WarehouseManagent.Forms.Supplier
             {
                 int supplierId = Convert.ToInt32(gridViewHelper.GetCellValue(e, supplierGridView, "SupplierID"));
                 bool success = supplierBusiness.RemoveSupplier(supplierId);
-                var results = feedBack.ShowFeedbackAlert(success, "Supplier", "deleted");
+                var results = UserFeedBack.ShowFeedbackAlert(success, "Supplier", "deleted");
                 if (results == DialogResult.OK)
                     supplierGridView.DataSource = LoadSupplierList();
             }

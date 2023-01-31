@@ -25,7 +25,7 @@ namespace WarehouseManagent.Forms.Products
             if (ValidInput())
             {
                 bool success = productBusiness.AddNewProduct(GetProductModel());
-                feedBack.ShowFeedbackAlert(success, "Product", "added");
+                UserFeedBack.ShowFeedbackAlert(success, "Product", "added");
             }
         }
 
