@@ -28,7 +28,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void saveBtn_Click(object sender, EventArgs e)
         { 
-            if (!ValidateInput())
+            if (ValidInput())
             {
                 bool success = categoryBusiness.AddNewCategory(GetCategoryModel());
                 feedBack.ShowFeedbackAlert(success, "Category", "added");
@@ -46,50 +46,37 @@ namespace WarehouseManagent.Forms.Categories
         }
 
         #region Validations
-        public bool ValidateInput()
+
+        #region Custom
+        public bool ValidInput()
         {
-            bool hasError = false;
-            if (string.IsNullOrEmpty(categoryNameTxt.Text))
+            List<bool> validations = new()
             {
-                categoryNameErrorMsg.Visible = true;
-                hasError = true;
-            }
-            else
-                categoryNameErrorMsg.Visible = false;
-
-            if (string.IsNullOrEmpty(descriptionRichTxt.Text))
-            {
-                descriptionErrorMsg.Visible = true;
-                hasError = true;
-            }
-            else
-                descriptionErrorMsg.Visible = false;
-
-            if (categoryPictureBx.Image is null)
-            {
-                pictureErrorMsg.Visible = true;
-                hasError = true;
-            }
-            else
-                pictureErrorMsg.Visible = false;
-
-            return hasError;
+                ValidationsHelper.IsValueProvided(categoryNameTxt.Text, categoryNameErrorMsg),
+                ValidationsHelper.IsValueProvided(descriptionRichTxt.Text, descriptionErrorMsg),
+                ValidationsHelper.IsImageSelected(categoryPictureBx, pictureErrorMsg)
+            };
+            return validations.All(x => x == true);
         }
+        #endregion
 
+        #region ValueChanged
         private void categoryNameTxt_TextChanged(object sender, EventArgs e)
         {
-            ValidateInput();
+            ValidationsHelper.IsValueProvided(categoryNameTxt.Text, categoryNameErrorMsg);
         }
 
         private void descriptionRichTxt_TextChanged(object sender, EventArgs e)
         {
-            ValidateInput();
+            ValidationsHelper.IsValueProvided(descriptionRichTxt.Text, descriptionErrorMsg);
         }
 
         private void categoryPictureBx_BackColorChanged(object sender, EventArgs e)
         {
-            ValidateInput();
+            ValidationsHelper.IsImageSelected(categoryPictureBx, pictureErrorMsg);
         }
+        #endregion
+
         #endregion
     }
 }

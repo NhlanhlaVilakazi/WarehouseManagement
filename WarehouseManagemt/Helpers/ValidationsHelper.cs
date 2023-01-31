@@ -4,7 +4,7 @@ namespace WarehouseManagent.Helpers
 {
     public class ValidationsHelper
     {
-        public void HandleIntegerInputs(TextBox textBox, Label label)
+        public static void HandleIntegerInputs(TextBox textBox, Label label)
         {
             if (string.IsNullOrEmpty(textBox.Text))
             {
@@ -15,10 +15,10 @@ namespace WarehouseManagent.Helpers
                 label.Visible = false;
         }
 
-        public bool IsTextboxNotNull(TextBox textBox, Label label)
+        public static bool IsValueProvided(string value, Label label)
         { 
             bool isValid = false;
-            if (string.IsNullOrEmpty(textBox.Text))  
+            if (string.IsNullOrEmpty(value))  
                 label.Visible = true;
             else
             {
@@ -28,22 +28,22 @@ namespace WarehouseManagent.Helpers
             return isValid;
         }
 
-        public bool IsDropdownValueSelected(ComboBox comboBox, Label label)
-        {
-            bool isValid = false;
-            if (string.IsNullOrEmpty(comboBox.Text))
-                label.Visible = true;
-            else
-            {
-                isValid = true;
-                label.Visible = false;
-            }
-            return isValid;
-        }
-
-        public void BlockStringInput(KeyPressEventArgs e)
+        public static void BlockStringInput(KeyPressEventArgs e)
         {
             e.Handled = char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar);
+        }
+
+        public static bool IsImageSelected(PictureBox pictureBox, Label label)
+        {
+            bool isValid = false;
+            if (pictureBox.Image is null)
+                label.Visible = true;
+            else
+            {
+                isValid = true;
+                label.Visible = false;
+            }
+            return isValid;
         }
     }
 }
