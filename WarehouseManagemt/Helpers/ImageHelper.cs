@@ -19,14 +19,30 @@
             return (Image)converter.ConvertFrom(byteImage);
         }
 
-        public Bitmap? LoadSelectedImage(PictureBox pictureBox)
+        public static bool IsValidImage(string fileName)
+        {
+            string[] imageExtensions = { "png", "jpg", "jpeg", "gif" };
+            string extension = fileName.Substring(fileName.LastIndexOf(".") + 1);
+            return imageExtensions.Any(x => x.Equals(extension, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public Bitmap? LoadSelectedImage(PictureBox pictureBox, Label pictureErrorMsg)
         {
             OpenFileDialog imageDialog = new();
             if (imageDialog.ShowDialog() == DialogResult.OK)
             {
-                bitMap = new Bitmap(imageDialog.FileName);
-                pictureBox.Image = bitMap;
-                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                if (IsValidImage(imageDialog.FileName))
+                {
+                    pictureErrorMsg.Visible = false;
+                    bitMap = new Bitmap(imageDialog.FileName);
+                    pictureBox.Image = bitMap;
+                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                else
+                {
+                    pictureErrorMsg.Text = "Supported image types [png, jpg, jpeg, gif]";
+                    pictureErrorMsg.Visible = true;
+                }
             }
             return bitMap;
         }

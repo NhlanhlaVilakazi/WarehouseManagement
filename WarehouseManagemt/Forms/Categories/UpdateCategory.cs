@@ -35,7 +35,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void updateImageBtn_Click(object sender, EventArgs e)
         {
-            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx);
+            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
         }
 
         private void updateBtn_Click(object sender, EventArgs e)

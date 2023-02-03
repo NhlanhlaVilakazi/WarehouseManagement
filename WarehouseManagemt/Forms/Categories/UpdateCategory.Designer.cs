@@ -36,6 +36,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.updateBtn = new System.Windows.Forms.Button();
+            this.pictureErrorMsg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.categoryPictureBx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // 
             this.categoryPictureBx.Location = new System.Drawing.Point(482, 87);
             this.categoryPictureBx.Name = "categoryPictureBx";
-            this.categoryPictureBx.Size = new System.Drawing.Size(201, 207);
+            this.categoryPictureBx.Size = new System.Drawing.Size(201, 185);
             this.categoryPictureBx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.categoryPictureBx.TabIndex = 96;
             this.categoryPictureBx.TabStop = false;
@@ -116,11 +117,24 @@
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
+            // pictureErrorMsg
+            // 
+            this.pictureErrorMsg.AutoSize = true;
+            this.pictureErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pictureErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.pictureErrorMsg.Location = new System.Drawing.Point(482, 275);
+            this.pictureErrorMsg.Name = "pictureErrorMsg";
+            this.pictureErrorMsg.Size = new System.Drawing.Size(173, 15);
+            this.pictureErrorMsg.TabIndex = 100;
+            this.pictureErrorMsg.Text = "Please select category picture";
+            this.pictureErrorMsg.Visible = false;
+            // 
             // UpdateCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureErrorMsg);
             this.Controls.Add(this.updateImageBtn);
             this.Controls.Add(this.categoryComboBx);
             this.Controls.Add(this.descriptionRichTxt);
@@ -148,5 +162,6 @@
         private Label label6;
         private Label label5;
         private Button updateBtn;
+        private Label pictureErrorMsg;
     }
 }

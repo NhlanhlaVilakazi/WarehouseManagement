@@ -19,7 +19,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void imageBrowseBtn_Click(object sender, EventArgs e)
         {
-            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx);
+            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
