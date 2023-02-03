@@ -1,6 +1,6 @@
 ﻿namespace WarehouseManagent.Business
 {
-    public enum ActionEnum
+    public enum ActionEnums
     {
         Delete,
         Update

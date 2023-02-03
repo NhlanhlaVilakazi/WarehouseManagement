@@ -22,9 +22,9 @@ namespace WarehouseManagent.Forms.Supplier
 
         private void supplierGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (GridViewHelper.GetColumn(e, supplierGridView).Equals(ActionEnum.Delete.ToString()))
+            if (GridViewHelper.GetColumn(e, supplierGridView).Equals(ActionEnums.Delete.ToString()))
                 DeleteSupplier(e);
-            else if (GridViewHelper.GetColumn(e, supplierGridView).Equals(ActionEnum.Update.ToString()))
+            else if (GridViewHelper.GetColumn(e, supplierGridView).Equals(ActionEnums.Update.ToString()))
                 UpdateSupplier(e);
         }
 

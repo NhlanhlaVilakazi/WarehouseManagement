@@ -24,9 +24,9 @@ namespace WarehouseManagent.Forms.Categories
 
         private void categoryGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Delete.ToString()))
+            if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnums.Delete.ToString()))
                 DeleteCategory(e);
-            else if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnum.Update.ToString()))
+            else if (GridViewHelper.GetColumn(e, categoryGridView).Equals(ActionEnums.Update.ToString()))
                 UpdateCategory(e);
         }
 

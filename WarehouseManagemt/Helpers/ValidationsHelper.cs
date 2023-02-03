@@ -1,6 +1,4 @@
-﻿using Microsoft.IdentityModel.Tokens;
-
-namespace WarehouseManagent.Helpers
+﻿namespace WarehouseManagent.Helpers
 {
     public class ValidationsHelper
     {
@@ -13,6 +11,19 @@ namespace WarehouseManagent.Helpers
             }
             else
                 label.Visible = false;
+        }
+
+        public static bool IsImageSelected(PictureBox pictureBox, Label label)
+        {
+            bool isValid = false;
+            if (pictureBox.Image is null)
+                label.Visible = true;
+            else
+            {
+                isValid = true;
+                label.Visible = false;
+            }
+            return isValid;
         }
 
         public static bool IsValueProvided(string value, Label label)
@@ -33,17 +44,5 @@ namespace WarehouseManagent.Helpers
             e.Handled = char.IsLetter(e.KeyChar) || char.IsWhiteSpace(e.KeyChar);
         }
 
-        public static bool IsImageSelected(PictureBox pictureBox, Label label)
-        {
-            bool isValid = false;
-            if (pictureBox.Image is null)
-                label.Visible = true;
-            else
-            {
-                isValid = true;
-                label.Visible = false;
-            }
-            return isValid;
-        }
     }
 }

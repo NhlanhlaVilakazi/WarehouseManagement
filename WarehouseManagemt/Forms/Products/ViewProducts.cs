@@ -20,9 +20,9 @@ namespace WarehouseManagent.Forms.Products
 
         private void productGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Delete.ToString()))
+            if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnums.Delete.ToString()))
                 DeleteteProduct(e);
-            else if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnum.Update.ToString()))
+            else if (GridViewHelper.GetColumn(e, productGridView).Equals(ActionEnums.Update.ToString()))
                 UpdateProduct(e);
         }
 
