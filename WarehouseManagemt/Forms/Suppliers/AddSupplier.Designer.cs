@@ -63,6 +63,7 @@
             // 
             // saveBtn
             // 
+            this.saveBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveBtn.Location = new System.Drawing.Point(614, 435);
             this.saveBtn.Name = "saveBtn";
@@ -74,6 +75,7 @@
             // 
             // addressRichTxt
             // 
+            this.addressRichTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addressRichTxt.Location = new System.Drawing.Point(505, 96);
             this.addressRichTxt.Name = "addressRichTxt";
             this.addressRichTxt.Size = new System.Drawing.Size(184, 144);
@@ -83,6 +85,7 @@
             // 
             // companyNameTxt
             // 
+            this.companyNameTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.companyNameTxt.Location = new System.Drawing.Point(505, 30);
             this.companyNameTxt.Name = "companyNameTxt";
             this.companyNameTxt.Size = new System.Drawing.Size(184, 23);
@@ -91,6 +94,7 @@
             // 
             // homePageTxt
             // 
+            this.homePageTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.homePageTxt.Location = new System.Drawing.Point(249, 398);
             this.homePageTxt.Name = "homePageTxt";
             this.homePageTxt.Size = new System.Drawing.Size(440, 23);
@@ -98,6 +102,7 @@
             // 
             // cityTxt
             // 
+            this.cityTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cityTxt.Location = new System.Drawing.Point(249, 156);
             this.cityTxt.Name = "cityTxt";
             this.cityTxt.Size = new System.Drawing.Size(184, 23);
@@ -106,6 +111,7 @@
             // 
             // contactNameTxt
             // 
+            this.contactNameTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contactNameTxt.Location = new System.Drawing.Point(249, 96);
             this.contactNameTxt.Name = "contactNameTxt";
             this.contactNameTxt.Size = new System.Drawing.Size(184, 23);
@@ -114,6 +120,7 @@
             // 
             // phoneTxt
             // 
+            this.phoneTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.phoneTxt.Location = new System.Drawing.Point(249, 338);
             this.phoneTxt.Name = "phoneTxt";
             this.phoneTxt.Size = new System.Drawing.Size(184, 23);
@@ -122,6 +129,7 @@
             // 
             // countryTxt
             // 
+            this.countryTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.countryTxt.Location = new System.Drawing.Point(505, 279);
             this.countryTxt.Name = "countryTxt";
             this.countryTxt.Size = new System.Drawing.Size(184, 23);
@@ -130,6 +138,7 @@
             // 
             // faxTxt
             // 
+            this.faxTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.faxTxt.Location = new System.Drawing.Point(505, 338);
             this.faxTxt.Name = "faxTxt";
             this.faxTxt.Size = new System.Drawing.Size(184, 23);
@@ -137,6 +146,7 @@
             // 
             // postalCodeTxt
             // 
+            this.postalCodeTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.postalCodeTxt.Location = new System.Drawing.Point(249, 279);
             this.postalCodeTxt.Name = "postalCodeTxt";
             this.postalCodeTxt.Size = new System.Drawing.Size(184, 23);
@@ -145,6 +155,7 @@
             // 
             // regionTxt
             // 
+            this.regionTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.regionTxt.Location = new System.Drawing.Point(249, 218);
             this.regionTxt.Name = "regionTxt";
             this.regionTxt.Size = new System.Drawing.Size(184, 23);
@@ -152,6 +163,7 @@
             // 
             // contactTitleTxt
             // 
+            this.contactTitleTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contactTitleTxt.Location = new System.Drawing.Point(249, 30);
             this.contactTitleTxt.Name = "contactTitleTxt";
             this.contactTitleTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -161,6 +173,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(249, 12);
@@ -171,6 +184,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(249, 200);
@@ -181,6 +195,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(505, 264);
@@ -191,6 +206,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(249, 261);
@@ -201,6 +217,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(505, 78);
@@ -211,6 +228,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(249, 78);
@@ -221,6 +239,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(505, 12);
@@ -231,6 +250,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(249, 320);
@@ -241,6 +261,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(505, 320);
@@ -251,6 +272,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(249, 138);
@@ -261,6 +283,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(249, 380);
@@ -271,6 +294,7 @@
             // 
             // contactTitleErrorMsg
             // 
+            this.contactTitleErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contactTitleErrorMsg.AutoSize = true;
             this.contactTitleErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contactTitleErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -283,6 +307,7 @@
             // 
             // companyNameErrorMsg
             // 
+            this.companyNameErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.companyNameErrorMsg.AutoSize = true;
             this.companyNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.companyNameErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -295,6 +320,7 @@
             // 
             // contactNameErrorMsg
             // 
+            this.contactNameErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contactNameErrorMsg.AutoSize = true;
             this.contactNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contactNameErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -307,6 +333,7 @@
             // 
             // cityErrorMsg
             // 
+            this.cityErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cityErrorMsg.AutoSize = true;
             this.cityErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cityErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -319,6 +346,7 @@
             // 
             // postalCodeErrorMsg
             // 
+            this.postalCodeErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.postalCodeErrorMsg.AutoSize = true;
             this.postalCodeErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.postalCodeErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -331,6 +359,7 @@
             // 
             // phoneErrorMsg
             // 
+            this.phoneErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.phoneErrorMsg.AutoSize = true;
             this.phoneErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.phoneErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -343,6 +372,7 @@
             // 
             // countryErrorMsg
             // 
+            this.countryErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.countryErrorMsg.AutoSize = true;
             this.countryErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.countryErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -355,6 +385,7 @@
             // 
             // addressErrorMsg
             // 
+            this.addressErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.addressErrorMsg.AutoSize = true;
             this.addressErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.addressErrorMsg.ForeColor = System.Drawing.Color.Red;

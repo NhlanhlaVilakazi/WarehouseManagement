@@ -44,6 +44,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(170, 172);
@@ -54,6 +55,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(170, 104);
@@ -64,6 +66,7 @@
             // 
             // saveBtn
             // 
+            this.saveBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.saveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveBtn.Location = new System.Drawing.Point(660, 395);
             this.saveBtn.Name = "saveBtn";
@@ -75,6 +78,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(534, 103);
@@ -85,6 +89,7 @@
             // 
             // categoryPictureBx
             // 
+            this.categoryPictureBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryPictureBx.Location = new System.Drawing.Point(534, 122);
             this.categoryPictureBx.Name = "categoryPictureBx";
             this.categoryPictureBx.Size = new System.Drawing.Size(201, 207);
@@ -94,6 +99,7 @@
             // 
             // descriptionRichTxt
             // 
+            this.descriptionRichTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.descriptionRichTxt.Location = new System.Drawing.Point(171, 190);
             this.descriptionRichTxt.Name = "descriptionRichTxt";
             this.descriptionRichTxt.Size = new System.Drawing.Size(291, 113);
@@ -103,6 +109,7 @@
             // 
             // imageBrowseBtn
             // 
+            this.imageBrowseBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imageBrowseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imageBrowseBtn.Location = new System.Drawing.Point(170, 329);
             this.imageBrowseBtn.Name = "imageBrowseBtn";
@@ -114,6 +121,7 @@
             // 
             // categoryNameErrorMsg
             // 
+            this.categoryNameErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryNameErrorMsg.AutoSize = true;
             this.categoryNameErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.categoryNameErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -126,6 +134,7 @@
             // 
             // pictureErrorMsg
             // 
+            this.pictureErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureErrorMsg.AutoSize = true;
             this.pictureErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pictureErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -138,6 +147,7 @@
             // 
             // descriptionErrorMsg
             // 
+            this.descriptionErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.descriptionErrorMsg.AutoSize = true;
             this.descriptionErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.descriptionErrorMsg.ForeColor = System.Drawing.Color.Red;
@@ -150,6 +160,7 @@
             // 
             // categoryNameTxt
             // 
+            this.categoryNameTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryNameTxt.Location = new System.Drawing.Point(171, 122);
             this.categoryNameTxt.Name = "categoryNameTxt";
             this.categoryNameTxt.Size = new System.Drawing.Size(290, 23);

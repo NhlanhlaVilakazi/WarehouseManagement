@@ -51,6 +51,7 @@
             // 
             // categoryComboBx
             // 
+            this.categoryComboBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryComboBx.FormattingEnabled = true;
             this.categoryComboBx.Location = new System.Drawing.Point(436, 113);
             this.categoryComboBx.Name = "categoryComboBx";
@@ -59,6 +60,7 @@
             // 
             // supplierComboBx
             // 
+            this.supplierComboBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.supplierComboBx.FormattingEnabled = true;
             this.supplierComboBx.Location = new System.Drawing.Point(180, 113);
             this.supplierComboBx.Name = "supplierComboBx";
@@ -67,6 +69,7 @@
             // 
             // discontinuedTxt
             // 
+            this.discontinuedTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.discontinuedTxt.FormattingEnabled = true;
             this.discontinuedTxt.Items.AddRange(new object[] {
             "Yes",
@@ -78,6 +81,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(180, 149);
@@ -88,6 +92,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(436, 210);
@@ -98,6 +103,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(436, 267);
@@ -108,6 +114,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(180, 95);
@@ -118,6 +125,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(436, 95);
@@ -128,6 +136,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(180, 267);
@@ -138,6 +147,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(436, 149);
@@ -148,6 +158,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(180, 210);
@@ -158,6 +169,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(180, 40);
@@ -168,6 +180,7 @@
             // 
             // updateproductBtn
             // 
+            this.updateproductBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.updateproductBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateproductBtn.Location = new System.Drawing.Point(528, 387);
             this.updateproductBtn.Name = "updateproductBtn";
@@ -179,6 +192,7 @@
             // 
             // quantityUnitTxt
             // 
+            this.quantityUnitTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.quantityUnitTxt.Location = new System.Drawing.Point(180, 167);
             this.quantityUnitTxt.Name = "quantityUnitTxt";
             this.quantityUnitTxt.Size = new System.Drawing.Size(184, 23);
@@ -186,6 +200,7 @@
             // 
             // unitPriceTxt
             // 
+            this.unitPriceTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unitPriceTxt.Location = new System.Drawing.Point(436, 167);
             this.unitPriceTxt.Name = "unitPriceTxt";
             this.unitPriceTxt.Size = new System.Drawing.Size(184, 23);
@@ -193,6 +208,7 @@
             // 
             // unitOrderedTxt
             // 
+            this.unitOrderedTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unitOrderedTxt.Location = new System.Drawing.Point(436, 228);
             this.unitOrderedTxt.Name = "unitOrderedTxt";
             this.unitOrderedTxt.Size = new System.Drawing.Size(184, 23);
@@ -200,6 +216,7 @@
             // 
             // reorderLevelTxt
             // 
+            this.reorderLevelTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.reorderLevelTxt.Location = new System.Drawing.Point(180, 288);
             this.reorderLevelTxt.Name = "reorderLevelTxt";
             this.reorderLevelTxt.Size = new System.Drawing.Size(184, 23);
@@ -207,6 +224,7 @@
             // 
             // unitStockTxt
             // 
+            this.unitStockTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unitStockTxt.Location = new System.Drawing.Point(180, 228);
             this.unitStockTxt.Name = "unitStockTxt";
             this.unitStockTxt.Size = new System.Drawing.Size(184, 23);
@@ -214,6 +232,7 @@
             // 
             // productNameTxt
             // 
+            this.productNameTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.productNameTxt.Location = new System.Drawing.Point(180, 58);
             this.productNameTxt.Name = "productNameTxt";
             this.productNameTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;

@@ -21,7 +21,7 @@
 
         public static bool IsValidImage(string fileName)
         {
-            string[] imageExtensions = { "png", "jpg", "jpeg", "gif" };
+            string[] imageExtensions = { "png", "jpg", "jpeg", "gif, ico" };
             string extension = fileName.Substring(fileName.LastIndexOf(".") + 1);
             return imageExtensions.Any(x => x.Equals(extension, StringComparison.OrdinalIgnoreCase));
         }
@@ -40,7 +40,7 @@
                 }
                 else
                 {
-                    pictureErrorMsg.Text = "Supported image types [png, jpg, jpeg, gif]";
+                    pictureErrorMsg.Text = "Supported image types [png, jpg, jpeg, gif, ico]";
                     pictureErrorMsg.Visible = true;
                 }
             }

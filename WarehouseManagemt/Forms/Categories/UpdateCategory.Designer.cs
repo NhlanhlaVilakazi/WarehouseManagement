@@ -42,6 +42,7 @@
             // 
             // updateImageBtn
             // 
+            this.updateImageBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.updateImageBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateImageBtn.Location = new System.Drawing.Point(482, 300);
             this.updateImageBtn.Name = "updateImageBtn";
@@ -53,6 +54,7 @@
             // 
             // categoryComboBx
             // 
+            this.categoryComboBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryComboBx.FormattingEnabled = true;
             this.categoryComboBx.Location = new System.Drawing.Point(119, 87);
             this.categoryComboBx.Name = "categoryComboBx";
@@ -61,6 +63,7 @@
             // 
             // descriptionRichTxt
             // 
+            this.descriptionRichTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.descriptionRichTxt.Location = new System.Drawing.Point(118, 141);
             this.descriptionRichTxt.Name = "descriptionRichTxt";
             this.descriptionRichTxt.Size = new System.Drawing.Size(291, 182);
@@ -69,6 +72,7 @@
             // 
             // categoryPictureBx
             // 
+            this.categoryPictureBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.categoryPictureBx.Location = new System.Drawing.Point(482, 87);
             this.categoryPictureBx.Name = "categoryPictureBx";
             this.categoryPictureBx.Size = new System.Drawing.Size(201, 185);
@@ -78,6 +82,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(118, 123);
@@ -88,6 +93,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(118, 69);
@@ -98,6 +104,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(482, 68);
@@ -108,6 +115,7 @@
             // 
             // updateBtn
             // 
+            this.updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.updateBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateBtn.Location = new System.Drawing.Point(583, 360);
             this.updateBtn.Name = "updateBtn";
@@ -119,6 +127,7 @@
             // 
             // pictureErrorMsg
             // 
+            this.pictureErrorMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureErrorMsg.AutoSize = true;
             this.pictureErrorMsg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pictureErrorMsg.ForeColor = System.Drawing.Color.Red;
