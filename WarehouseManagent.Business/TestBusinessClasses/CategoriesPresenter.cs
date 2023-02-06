@@ -4,22 +4,24 @@ namespace WarehouseManagent.Business.TestBusinessClasses
 {
     public class CategoriesPresenter
     {
-        private readonly ICategoryViewModel _categoryViewModel;
+        private readonly ICategoryInfo _categoryInfo;
 
-        public CategoriesPresenter(ICategoryViewModel categoryViewModel)
+        public CategoriesPresenter(ICategoryInfo categoryInfo)
         {
-            _categoryViewModel = categoryViewModel;
-            _categoryViewModel.AddBtn += _categoryViewModel_AddBtn;
+            _categoryInfo = categoryInfo;
+            _categoryInfo.AttemptSave += _categoryInfo_AttemptSave;
         }
 
-        private void _categoryViewModel_AddBtn(object? sender, EventArgs e)
+        private void _categoryInfo_AttemptSave(object? sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(_categoryViewModel.CategoryName))
+            _categoryInfo.IsErrorMessageVisible = false;
+            if (string.IsNullOrEmpty(_categoryInfo.CategoryName))
             {
-                _categoryViewModel.IsErrorMessageVisible = true;
-                _categoryViewModel.ErrorMessage = "Category name can not be empty";
+                _categoryInfo.IsErrorMessageVisible = true;
+                _categoryInfo.ErrorMessage = "Category name is required";
             }
-
+            else
+                _categoryInfo.ErrorMessage = string.Empty;
         }
     }
 }

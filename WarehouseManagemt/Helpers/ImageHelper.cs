@@ -22,7 +22,7 @@
         public static bool IsValidImage(string fileName)
         {
             string[] imageExtensions = { "png", "jpg", "jpeg", "gif, ico" };
-            string extension = fileName.Substring(fileName.LastIndexOf(".") + 1);
+            string extension = fileName[(fileName.LastIndexOf(".") + 1)..];
             return imageExtensions.Any(x => x.Equals(extension, StringComparison.OrdinalIgnoreCase));
         }
 

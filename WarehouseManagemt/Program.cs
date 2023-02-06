@@ -9,7 +9,7 @@ namespace WarehouseManagent
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            ServicesExtensions.ApplicationConnectionStringService();
+            ServicesExtensions.CheckApplicationConnectionString();
             ConfigureInjections.Config();
             Application.Run(new WarehouseManagement());
 
