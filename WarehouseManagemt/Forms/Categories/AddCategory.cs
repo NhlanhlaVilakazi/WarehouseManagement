@@ -6,20 +6,18 @@ namespace WarehouseManagent.Forms.Categories
 {
     public partial class AddCategoryForm : Form
     {
-        private ImageHelper imageHelper;
-        private CategoryBusiness categoryBusiness;
         private Bitmap? bitMap;
+        private CategoryBusiness categoryBusiness;
 
         public AddCategoryForm()
         {
             InitializeComponent();
-            imageHelper = new();
             categoryBusiness = new();
         }
 
         private void imageBrowseBtn_Click(object sender, EventArgs e)
         {
-            bitMap = imageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
+            bitMap = ImageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -37,7 +35,7 @@ namespace WarehouseManagent.Forms.Categories
             {
                 CategoryName = categoryNameTxt.Text,
                 Description = descriptionRichTxt.Text,
-                Picture = new ImageHelper().ImageToByte(bitMap)
+                Picture = ImageHelper.ImageToByte(bitMap)
             };
         }
 

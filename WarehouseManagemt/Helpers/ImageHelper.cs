@@ -2,21 +2,20 @@
 {
     public class ImageHelper
     {
-        private Bitmap? bitMap;
-        private ImageConverter converter;
+        private static Bitmap? bitMap;
+        private static ImageConverter converter;
         public ImageHelper()
         {
             converter = new();
         }
-        public byte[] ImageToByte(Image? image)
+        public static byte[] ImageToByte(Image? image)
         {
-            
-            return (byte[])converter.ConvertTo(image, typeof(byte[]));
+            return (byte[])converter.ConvertTo(image, typeof(byte[]))!;
         }
 
         public Image BytesToImage(byte[] byteImage)
         {
-            return (Image)converter.ConvertFrom(byteImage);
+            return (Image)converter.ConvertFrom(byteImage)!;
         }
 
         public static bool IsValidImage(string fileName)
@@ -26,7 +25,7 @@
             return imageExtensions.Any(x => x.Equals(extension, StringComparison.OrdinalIgnoreCase));
         }
 
-        public Bitmap? LoadSelectedImage(PictureBox pictureBox, Label pictureErrorMsg)
+        public static Bitmap? LoadSelectedImage(PictureBox pictureBox, Label pictureErrorMsg)
         {
             OpenFileDialog imageDialog = new();
             if (imageDialog.ShowDialog() == DialogResult.OK)
