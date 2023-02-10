@@ -7,14 +7,10 @@ namespace WarehouseManagent.Forms.Categories
     public partial class ViewCategoryForm : Form
     {
         private CategoryBusiness categoryBusiness;
-        private UserFeedBack feedBack;
-        private GridViewHelper gridViewHelper;
         public ViewCategoryForm()
         {
             InitializeComponent();
             categoryBusiness = new();
-            gridViewHelper = new();
-            feedBack = new();
         }
 
         private void ViewCategoryForm_Load(object sender, EventArgs e)

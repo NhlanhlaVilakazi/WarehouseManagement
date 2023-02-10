@@ -6,8 +6,7 @@ namespace WarehouseManagent.Forms.Categories
 {
     public partial class UpdateCategory : Form
     {
-        private int categoryId;
-        private Bitmap? bitMap;
+        private readonly int categoryId;
         private CategoryBusiness categoryBusiness;
         public UpdateCategory(int categortID)
         {
@@ -29,7 +28,7 @@ namespace WarehouseManagent.Forms.Categories
 
         private void updateImageBtn_Click(object sender, EventArgs e)
         {
-            bitMap = ImageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
+            ImageHelper.LoadSelectedImage(categoryPictureBx, pictureErrorMsg);
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
